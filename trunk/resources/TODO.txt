@@ -1,0 +1,61 @@
+TODO:
+- Webservice for uncompress & compress
+- Universal binary
+- Crasher (*** glibc detected *** double free or corruption (!prev): 0x080588c0 ***) with following command on linux: "$CSS_OPTIMIZER" -lsn 'css/lib/ie.css'
+
+- Email TODO:
+Hi There,
+
+Thanks for making this tool—it’ll be useful!
+
+I have a couple of suggestions:
+* It’d be nice to have the option of stripping double carriage
+returns, both in-rule and between rules:
+.test {
+   display: float;
+
+}
+->
+.test {
+   display: float;
+}
+
+And
+
+.test {
+   display: float;
+}
+
+.test1 {
+   display: inline;
+}
+->
+.test {
+   display: float;
+}
+.test1 {
+   display: inline;
+}
+
+* I personally use comments in strange places, and would like to see
+comment position maintained (ie not moved to the next line). eg
+/* @group testing */
+.test { /* this is sample code */
+   width: 20% /* =240px */
+} /* trailing comment */
+
+Of these comments the first and last are unchanged, but the middle two
+are moved to new lines.
+
+* Finally I noticed that the formatter picks up on “;” in comments, eg
+/* this is a comment; it’s pretty useless */
+becomes
+/* this is a comment;
+   it’s pretty useless */
+
+While you probably want to format CSS inside comments, it’d be good to
+restrict ‘return after ;’ to inside {}
+
+Thanks again
+
+peace - oli

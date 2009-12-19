@@ -1,0 +1,74 @@
+<?php
+/*
+ Handles the forms
+ which form it is sent from is controlled by a 'c' query string varibal
+ c = 0: The contact form
+ c = 1: the camp registration form
+ */
+
+$result = "Thank you for contacting us, we will get back to you shortly.";
+$to ="info@handwriting-success.com";
+
+//grab all the generic vars that are commom in both forms
+$age = $_POST['age'];
+$grade = $_POST['grade'];
+$name = $_POST['name'];
+$parent_name = $_POST['parent_name'];
+$email = $_POST["email"];
+$home_phone = $_POST['home_phone'];
+$cell_phone = $_POST['cell_phone'];
+$address = $_POST['address'];
+$comment_handwriting = $_POST['comment_handwriting'];
+
+//make a generic message format
+$message ="
+Name: $name
+Age: $age
+Grade: $grade
+Parents Name: $parent_name
+E-mail Address: $email
+Home Phone Number: $home_phone
+Cell Phone Number: $cell_phone
+Address: $address
+Comments on Childs Handwriting Needs: $comment_handwriting
+";
+
+//add in special fields specific to certain forms
+switch($_REQUEST['c']) {
+	case 0: //the contact us form
+	$comment_question = $_POST['comment_question'];
+	$message .="General comments or Questions:".$comment_question;
+	$subject = "HWS General Request";
+	break;
+	case 1: //the registration form
+	$first_class = $_POST['first_class'];
+	$second_class = $_POST['second_class'];
+	$message .="First Class Choice: $first_class\nSecond Class Choice: $second_class\n";
+	$subject = "Summer Handwriting Camp Registration";
+	break;
+}
+
+//add in the parents name in the subject if they filled out the name
+if($name) {
+	$subject .=" From:".$parent_name;
+}
+
+//make the header
+$header = "From: ".$email;
+
+//mail the message
+mail($to, $subject, $message, $header);
+?>
+<html>
+<head>
+<title>Handwriting Success-Thanks</title>
+<?php include"includes/meta.html"; ?>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<?php include"includes/header.html";?>
+      <table border="0" width="100%">
+        <tr>
+          <td align="center"><img src="images/headlines/thank_you.gif" alt="Thank you for contacting us" width="161" height="28" border="0"><p><?=$result;?></p></td>
+	 	 </td>
+        </tr>
+      </table>
+<?php include"includes/footer.html";?>

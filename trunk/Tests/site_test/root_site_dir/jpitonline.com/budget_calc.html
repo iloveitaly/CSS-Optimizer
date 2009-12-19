@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>ajourney- Budget Calculater</title>
+<?php include "includes/meta.html"; ?>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="javascript" type="text/javascript" src="includes/main.js"></script>
+<script language="javascript" type="text/javascript" src="includes/budget.js"></script>
+<link rel="stylesheet" type="text/css" href="includes/main.css">
+</head>
+<?php include "includes/body.inc"; ?>
+		<td height="509" valign="top">
+		<table width="100%" border="0" cellpadding="10" cellspacing="0">
+		  <!--DWLayoutTable-->
+		  <tr>
+		  	<td align="center"><span class="header">Budget Calculator</span>
+		  	  <p>Use this Budget Calculator to quickly calculate how much you should be<br>
+		  	     spending on each wedding service according to your total budget.<br>Please place the amount of money you would like to invest in the total budget section.</p></td>
+		</tr>
+		  <tr>
+		    <td width="887" height="509" valign="top">
+				<form name="main" action="Javascript:">
+				<table width="786" border="0" cellpadding="5" cellspacing="5" align="center" class="white_txt">
+				  <tr bgcolor="#5D9AC6">
+					<th width="162" scope="col">Service</th>
+					<th width="328" scope="col">Description</th>
+					<th width="112" scope="col">% of Budget</th>
+					<th width="119" scope="col">Your Budget</th>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>CEREMONY</td>
+					<td>Ceremonial Person fee, church or synagogue donation.</td>
+					<td> 3%</td>
+					<td align="center">$<input class="box" name="ceremony" type="text" id="ceremony" onKeyUp="costcalc(0, this.value)" onKey size="10" maxlength="10"></td>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>PHOTONATURALISM</td>
+					<td>Professional Wedding/Event Portrait Photonaturalism</td>
+					<td>21.5%</td>
+					<td align="center">$<input class="box" name="photography" type="text" id="photography" size="10" maxlength="10" onKeyUp="costcalc(1, this.value)"></td>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>VIDEO PRODUCTION</td>
+					<td>Professional Wedding/Event Video personnel</td>
+					<td>9%</td>
+					<td align="center">$<input class="box" name="video" type="text" id="video" size="10" maxlength="10" onKeyUp="costcalc(2, this.value)"></td>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>RECEPTION</td>
+					<td>Food and drink, cake, site and/or rental fees.</td>
+					<td>36%</td>
+					<td align="center">$<input class="box" name="food" type="text" size="10" maxlength="10" onKeyUp="costcalc(3, this.value)"></td>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>ATTIRE</td>
+					<td>Gown,   tux or suit,.</td>
+					<td>12.5%</td>
+					<td align="center">$<input class="box" name="clothes" type="text" id="clothes" size="10" maxlength="10" onKeyUp="costcalc(4, this.value)"></td>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>FLOWERS</td>
+					<td>Bouquets, canopy and cake topper</td>
+					<td>8%</td>
+					<td align="center">$<input class="box" name="flowers" type="text" id="flowers" size="10" maxlength="10" onKeyUp="costcalc(5, this.value)"></td>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>MUSIC</td>
+					<td> Musicians, DJ, sound system rental.</td>
+					<td>7%</td>
+					<td align="center">$<input class="box" name="music" type="text" id="music" size="10" maxlength="10" onKeyUp="costcalc(6, this.value)"></td>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>TRANSPORTATION</td>
+					<td>Limo or car rental, guest shuttle, parking</td>
+					<td>3%</td>
+					<td align="center">$<input class="box" name="trans" type="text" id="trans" size="10" maxlength="10" onKeyUp="costcalc(7, this.value)"></td>
+				  </tr>
+				  <tr bgcolor="#5D9AC6">
+					<td>TOTAL BUDGET</td>
+					<td>&nbsp;</td>
+					<td>100%</td>
+					<td align="center">$<input class="box" name="total" type="text" size="10" maxlength="10" id="total" onKeyUp="costcalc(8, this.value)"></td>
+				  </tr>
+				</table>
+				</form>
+			</td>
+	      </tr>
+	    </table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

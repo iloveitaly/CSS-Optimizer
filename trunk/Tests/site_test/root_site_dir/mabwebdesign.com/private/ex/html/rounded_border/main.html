@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+	<head>
+		<title>Rounded Table with a Nested Table</title>
+		<!--code created by michael bianco: http://mabwebdesign.com-->
+		<style>
+			.topr {
+				background: url(tr.gif) no-repeat top right;
+			}
+			.topl {
+				background: url(tl.gif) no-repeat top left;
+			}
+			.botl {
+				background: url(bl.gif) no-repeat bottom left;
+			}
+			.botr {
+				background: url(br.gif) no-repeat bottom right;
+			}
+			.insidetbl {
+				height: 100%;
+				width: 100%;
+				/*use this padding to give the nested table a 
+				space around the edges. Its basicilly just padding this cell instead of the 
+				rest of the cells in the table*/
+				padding: 10;
+			}
+		</style>
+	</head>
+	<body bgcolor="#93BCD8">
+		<table align="center" width="75%" bgcolor="#5D9AC6" border="0" cellpadding="0" cellspacing="0" height="50%">
+			<tr valign="top">
+				<td class="topl">&nbsp;</td>
+				<td class="topr">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="100%" width="100%">
+					<table align="center" cellpadding="0" cellspacing="0" border="0" class="insidetbl">
+						<tr>
+							<td bgcolor="#c6dcea" align="center">This is a cool rounded table
+							<p>Its harder to make then you would think</p>
+							<p>Safari doesn't like by method of making the nested table expand all the way</p>
+							<p>But firefox does!</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr valign="bottom">
+				<td class="botl">&nbsp;</td>
+				<td class="botr">&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>

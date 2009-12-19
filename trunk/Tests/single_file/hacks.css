@@ -1,0 +1,30 @@
+/* hacks are documented at: http://diveintoaccessibility.org/examples/fontsize.html */
+
+p {
+  font-size: 12px;
+}
+
+/*/*/a{}
+body p {
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body p {
+    font-size: small;
+}
+/* */
+
+.anotherDecl {
+	boder-style: solid;
+}
+
+.endHackTest {
+  voice-family: "\"}\"";
+}
+
+.justToCheck {
+	border-style: solid;
+	font-size: large;
+}

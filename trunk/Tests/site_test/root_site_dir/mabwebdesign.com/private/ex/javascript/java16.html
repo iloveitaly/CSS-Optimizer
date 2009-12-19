@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+<!--interacting with forms, this is the cool stuff-->
+		<title>java16</title>
+<script language="javascript">
+//start new function
+function read()
+{
+//start commands for  function
+//define varibals for the value of the text box
+var first = document.name.first.value
+var last = document.name.last.value
+//make alert with the values of whatever is in the text box
+alert("Your name is "+first+" "+last+"")
+}
+</script>
+	</head>
+	<body>
+<form name="name">
+<br><h5>Whats your first name:</h5><input type="text" name="first" id="first">
+<br><h5>Whats your last name:</h5><input type="text" name="last" id="last">
+<br><input type="button" value="click here" onClick="read()"
+</form>
+	</body>
+</html>

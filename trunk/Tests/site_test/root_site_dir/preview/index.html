@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="author" content="MAB Web Design, Michael Bianco">
+		<meta name="description" content="AMB White Studios provides previews of all your photos from your event instanly on the internet.">
+		<meta name="keywords" content="picture, preview, instant, on-line, amb, white, studios, professional photographers">
+		<link rel="stylesheet" href="simple.css" type="text/css">
+		<title>AMB White Studios Picture Preview</title>
+		<style type="text/css">
+		body {		font-family: "Times New Roman", "Times New Roman", "Times New Roman";		}
+		</style>
+		<script language="javascript">
+			function checkform() {
+			var pass = document.login.pass.value.length
+			var name = document.login.name.value.length
+			if(name<=3){			alert('Username must be At least 4 characters in length')			} else {			if(pass<=3){			alert('Password must be At least 4 characters in length')			} else {			document.login.action="login.php"			document.login.submit()			}			}			}
+		</script>
+	</head>
+	<body>
+		<table align="center">
+			<tr>
+				<td><img src="../images/logopp.jpg" alt="on-Line picture previews"><p></td>
+			</tr>
+			<tr>
+				<td>
+					<table align="center">
+						<form action="Javascript:checkform()" method="POST" name="login">
+							<tr>
+								<td>Username:</td>
+								<td><input name="name" type="text"></td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+								<td><input name="pass" type="password"></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center"><input type="submit" name="Submit" value="Log In"></td>
+							</tr>
+						</form>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"><p><p><font size="-5"><a href="trouble.html">Having Trouble?</a></font></td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<?php
+include_once "includes/php/indexdir.php";
+
+//random directorie parser
+$files = new indexDir();
+$files->index("images/bg_images");	
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>MAB Web Design- Contact Us</title>
+		<?php include "includes/html/meta.html"; ?>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" type="text/css" href="includes/css/contact.css">
+		<link rel="stylesheet" type="text/css" href="includes/css/main.css">
+		<script language="javascript" type="text/javascript" src="includes/js/contact.js"></script>
+		<script language="javascript" type="text/javascript" src="includes/js/main.js"></script>
+	</head>
+	<!--MAB HTML Site Design v-2.0-->
+	<body>
+<?php include_once "includes/html/header.html";?>
+			<div class="title" style="left:50px;top:51px;width:600px;">Contact MAB</div>		
+			<div class="content" style="left:64px;top:81px;width:592px;height:370px;">
+				<p>If you are interested in what MAB can do for you, 
+				you can contact us by either completing the form below or E-mailing us directly.</p>
+				<form action="Javascript:checkForm();" method="post" name="main">
+				<div id="list">
+					<div><span class="small_title">Name:</span><input type="text" name="name"></div>
+					<div><span class="small_title">E-mail:</span><span class="required">*</span><input type="text" name="email"></div>
+					<div><span class="small_title">Service-Type:</span>
+					<select name="type">
+					<option>HTML</option>
+					<option>Flash</option>
+					<option>Outsourcing</option>
+					<option>Site add-on</option>
+					<option>Dont know</option>
+					</select></div>
+					<div><span class="small_title">Description:</span><span class="required">*</span><textarea rows="5" cols="1" name="description"></textarea></div>
+					<div><input type="submit" value="Submit Request" class="submit" onmouseover="sub_init(this)"></div>
+				</div>
+				</form>
+				<div id="estimate_info">
+				<p>&nbsp;</p>
+				<p>When requesting a estimate for a site design it is usefull for us if you include as much information as possible.</p>
+				<p>Try to include information like how many pages or sections, whether or not the site will include specail features such as log-in systems or admin changeable content.</p>
+				<p>Also, please include links to any sites that have a design or feature that you like.</p>
+				</div>
+			</div>
+			<!--news box-->
+			<div class="whiteBox" style="width:620px;height:410px;left:50px;top:41px;">&nbsp;</div>
+			<div class="whiteBox" style="width:600px;height:390px;left:60px;top:51px;">&nbsp;</div>
+<?php include_once "includes/html/footer.html";?>

@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>CSS Optimizer</title>
+		<style type="text/css">
+		* {
+			padding: 0;
+			border:0;
+			margin:0;
+			font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;
+		}
+		
+		html, body {
+			margin:5px;
+			background-color: #006992;
+		}
+
+		#container {
+			background-color: white;
+			padding-bottom: 10px;	
+		}
+
+		#header {
+			text-align: center;
+			color: #2C536C;
+			font-size: 4em;
+			font-family: Arial, Sans-Serif;
+			font-weight: bold;
+			white-space: nowrap;
+			margin-left:10px;
+			margin-right:10px;
+			margin-bottom: 20px;			
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: #2C536C;
+
+		}
+
+		h3 {
+			color: #2C536C;
+			font-size: 2em;
+			margin-left: 10px
+		}
+
+		p, table {
+			margin:10px;
+			margin-top:0;
+		}
+		
+		p, table {font-size:.8em;}
+		table {margin-left:15px;}
+
+		td {
+			background-color: #E5E5E5;
+			padding: 5px;
+		}
+
+		a:hover {
+			background-color:#2C536C;
+			color:white;
+			text-decoration: none;
+		}
+
+		.code, pre {
+			font-family: "Courier New", Courier, monospace;
+			font-size: 10pt;
+			color: black;
+		}
+		</style>
+	</head>
+	<body>
+	<div id="container">
+		<div id="header">CSS Optimizer V1.0 Manual</div>
+		<h3>About</h3>
+		<p>CSS Optimizer is a command line application that optimizes CSS code. 
+		It reduces the filesize significantly, 20-60% depending on your coding style, by stripping unneeded characters such as whitespace, tabs, newlines, and semi-colons. CSS Optimizer only eliminates characters that are not vital to proper display of the CSS file. 
+		CSS Optimizer also converts long-hand CSS declerations to short hand equivilents to eliminate even more unneeded characters. 
+		CSS Optimizer is meant to be used for production web-sites, it is <b>not</b> meant to be used while your web-site is in production since CSS Optimizer makes CSS code extremely hard to read. 
+		CSS Optimizer has been tested to work under many browsers such as Firefox, Mozilla, Safari, and IE; currently I have not found a browser that it does not work successfully on.</p>
+
+		<h3>Credits</h3>
+		<p>This software was written by me, <a href="http://developer.mabwebdesign.com/about.html">Michael Bianco</a>. 
+		It was my first program written in C, and I've gotten much better at programming in C by creating this program.
+		Writing software, and documentation <i>does</i>, despite popular belief, take time and energy. 
+		If you would like to encourage further development of CSS Optimizer please consider sending a few dollars to my pay-pal account <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=iloveitaly%40comcast%2enet&item_name=MAB%20Web%20Design%2fSoftware&no_shipping=0&no_note=1&tax=0&currency_code=USD&bn=PP%2dDonationsBF&charset=UTF%2d8">iloveitaly@comcast.net</a>.</p>
+
+		<h3>Usage</h3>
+		<p>CSS Optimizer most basic use is to simply process a CSS file and output compressed CSS code. This can be accomplished by a simple command such as:</p>
+		<pre>
+		cssoptimizer ./in.css
+		</pre>
+		<p>The above command takes the file in.css, compressed the CSS and outputs the compressed CSS code into a file names in_stripped.css.
+		You can also specify a output file-name, so if you want the compressed css code to be placed in a file named 'compressed.css' you could use the following command:</p>
+		<pre>
+		cssoptimizer ./in.css ./compressed.css
+		</pre>
+		<p>CSS Optimizer also has a number of options you can give it to change its execution behavior. For instance if you wanted to save the compressed CSS code in the original file given for processing you could the -s option:</p>
+		<pre>
+		cssoptimizer ./in.css -s
+		</pre>
+		<p>There are a number of command line options you can pass to CSS Optimizer:</p>
+		<table>
+			<tr>
+				<td nowrap>-l</td>
+				<td>Turns off long-hand to short hand conversion</td>
+			</tr>
+			<tr>
+				<td nowrap>-s</td>
+				<td>Compressed CSS code will be inserted into the original CSS file (reffered to as <b>inputfile</b> throughout the rest of this document). If you use this option do not specify an ouput file-name. 
+				CSS Optimizer will create a file using the same name as your inputfile file with a '_unstripped' suffix that will contain the unprocessed CSS code. 
+				If you want dont want CSS Optimizer to create a backup file, use the -n option.</td>
+			</tr>
+			<tr>
+				<td nowrap>-h</td>
+				<td>If the inputfile is single file CSS Optimizer treats that file as a html file. If a directory was specified along with the -r argument all files ending in .htm or .html will be processed as html files.</td>
+			</tr>
+			<tr>
+				<td>-r</td>
+				<td>Enables recursive directory searching. 
+				Do not specify a outputfile, simply specify a directory as the inputfile with any other optional options (-l, -s, -q, etc) and CSS Optimizer will find all files in the specifed directory, and files in any child directories, with the extension .css (.htm and .html files will also be found if the -h option was specified) .</td>
+			</tr>
+			<tr>
+				<td>-n</td>
+				<td>Specifies that no backup file will be created, this option only works in combination with the -s option.</td>
+			</tr>
+			<tr>
+				<td>-i</td>
+				<td>Compress CSS code piped into stdin</td>
+			</tr>
+			<tr>
+				<td>-o</td>
+				<td>Ouput compressed CSS code to stdout. 
+				This command can only be used when compressing a single css file, or when compressing code from stdin with the -o argument.</td>
+			</tr>
+			<tr>
+				<td>-q</td>
+				<td>Suppress result information</td>
+			</tr>
+		</table>
+		<p>Options can be entered in any order, and can be combined. 
+		The only restriction is that your output file (if you supply one) must be entered after your inputfile. 
+		For instance if you wanted to save the compressed CSS code in the original file without creating a backup file and recieving result information; both of the following commands would work:</p>
+		<pre>
+		cssoptimizer ./in.css -n -s -q
+		cssoptimizer ./in.css -nsq
+		</pre>
+		<h3>Bugs, Feature Requests, Source Code, and Updates</h3>
+		<p>Please <a href="mailto:&#115;&#111;&#102;&#116;&#119;&#97;&#114;&#101;&#64;&#109;&#97;&#98;&#119;&#101;&#98;&#100;&#101;&#115;&#105;&#103;&#110;&#46;&#99;&#111;&#109;">E-mail Me</a> with any bug reports, and feature requests. 
+		You can <a href="http://developer.mabwebdesign.com/cssoptimizer/download.html">Download</a> the full source code. All updated will be announced on my <a href="http://blog.mabwebdesign.com/">Blog</a> and posted on the <a href="http://developer.mabwebdesign.com/cssoptimizer/download.html">Download Page</a>.</p>
+		<h3>License</h3>
+		<p>This software is OSS (Open Source Software) and is released under the GPL license. You can learn more about the GPl license <a href="http://www.gnu.org/copyleft/gpl.html">here</a>. If you want to bundle CSS Optimizer with your application <a href="mailto:&#115;&#111;&#102;&#116;&#119;&#97;&#114;&#101;&#64;&#109;&#97;&#98;&#119;&#101;&#98;&#100;&#101;&#115;&#105;&#103;&#110;&#46;&#99;&#111;&#109;"">let me know</a>.</p>
+	</div>
+	</body>
+</html>

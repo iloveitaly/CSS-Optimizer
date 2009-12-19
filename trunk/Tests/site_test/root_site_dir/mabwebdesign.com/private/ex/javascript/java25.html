@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title></title>
+	</head>
+	<body>
+<script language="javascript">
+now = new Date()
+sec = now.getSeconds()
+num = ((sec)%3)+1
+var type = ('<img src="images/pic1.gif"><br>i am happy')
+var type1 = ('<img src="images/pic2.gif"><br>not sure what mood i am in')
+var type2 = ('<img src="images/pic3.gif"><br>i am mad')
+if( num == 1 )
+{mood = type}
+if( num == 2 )
+{mood = type1}
+if( num == 3 )
+{mood = type2}
+document.write("" +mood+ "")
+</script>
+
+	</body>
+</html>

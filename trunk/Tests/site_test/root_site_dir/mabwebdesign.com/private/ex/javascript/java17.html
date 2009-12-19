@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>java17</title>
+<script language="javascript">
+//make new function
+//ask for name and state
+var st = prompt('what state do you live in?')
+var nm = prompt('whats your name?')
+
+//make the write function
+function setvalue()
+{
+document.form.state.value=("your name is " +nm+ "")
+document.form.nm.value=("you are from " +st+ "")
+}
+</script>
+	</head>
+	<body>
+<form name="form">
+<p><input type="text" name="state">
+<p><input type="text" name="nm">
+<br><input type="button" value="click here" onClick="setvalue()">
+</form>
+
+
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>java19</title>
+<script language="javascript">
+function linkaw()
+{
+var which = document.links.away.selectedIndex;
+location.href = document.links.away.options[which].value;
+}
+function linkhe()
+{
+var which = document.links.here.selectedIndex;
+location.href= document.links.here.options[which].value;
+}
+</script>
+
+	</head>
+	<body>
+</form>
+<form name="links">
+<select name="away">
+<option selected>select one
+<option value="http://www.homestarrunner.com">homestar
+</select>
+<input type="button" value="go" onClick="linkaw()">
+<br><select name="here">
+<option selected>select one
+<option value="pages/java19sub.html">dunno
+</select>
+<input type="button" value="go" onClick="linkhe()">
+</form>
+	</body>
+</html>

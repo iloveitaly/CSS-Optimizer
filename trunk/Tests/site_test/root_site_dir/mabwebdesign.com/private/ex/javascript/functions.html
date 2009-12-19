@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>testing out the functions.....</title>
+<script language="javascript">
+function numcheck(num1, num2, text) {
+numm1 = num1*2
+numm2 = num2*3
+quote = "you said" +text
+alert("" +quote+ " yeah and.... " +numm1+ " " +numm2+ "")
+}
+</script>
+<script language="javascript">
+function checkit() {
+var field1 = document.myform.field1.value
+var field2 = document.myform.field2.value
+var txt = document.myform.field3.value
+numcheck(field1, field2, txt)
+}
+</script>
+
+	</head>
+	<body>
+<form name=myform>
+type a number in the following boxes:<br><input type="text" name="field1" size="2"><br><input type="text" name="field2" size="2">
+<br>type in some kinda message here:<input type="text" name="field3" size="10">
+<p><input type="button" value="do the thing" onClick="checkit()">
+</form>
+<p><center> this may seem really simple but look at the code....<br> I am assigning function paraimters.</center></p>
+	</body>
+</html>

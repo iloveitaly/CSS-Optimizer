@@ -1,0 +1,42 @@
+05/16/09- V1.1
+-CSS Optimizer now correctly processes 'font: 62.5%/1.85em'
+-Minor changes
+
+11/25/05- V1.0
+-Adding support for the "\"}\"" hack outlined here: http://diveintoaccessibility.org/examples/fontsize.html
+-Added processing css from the standard input (-i option)
+-Added outputting processed css to the standard output (-o option)
+-Added -q (quiet) option
+-Code cleanup & optimization
+-Updated manual/reame now in HTML
+-Online version of CSS Optimizer at: http://mabblog.com/cssoptimizer/compress.html
+-CSS un-compressor at: http://mabblog.com/cssoptimizer/uncompress.html
+-Exit codes are now predictable. CSS Optimizer uses standard error codes specified in <sysexits.h>
+-Linux version now availible
+
+06/11/05 -V.9
+-Improved recursive directory processing
+-Improved compatibility with fie/directory names that contain periods
+-Added support for parsing css information inside <style> tags
+-Added -h option adding support for .html & .htm files
+
+05/29/05 -V.8 Release
+-Fixed a bug where a non-quoted path in a statement such as @import url(../../../bla/boo.jpg); would loose certain characters
+-Fixed a bug where the outputfile argument would not be recognized
+-Improved error reporting and error checking
+-Much improved command line argument parser
+-The internal long-to-short parser implementation is complete
+-All shorthand properties are now supported in long-hand to short-hand conversion
+-Some minor miscellaneous bug-fixes
+
+05/24/05 -V.7 Release
+-Recursive directory searching & optimizing is now implemented!
+-Much improved file system access and error handling
+-Ability to process the CSS information and store it in the same file (the -s option)
+-Ability to request that no backup file be created when using the -s option (the -n option)
+-Some additional CSS file optimization
+-Improved long-hand to short-hand parser, although still not perfect
+-Source code released under the GPL
+
+03/14/05- V.5b Release
+-Initial Release

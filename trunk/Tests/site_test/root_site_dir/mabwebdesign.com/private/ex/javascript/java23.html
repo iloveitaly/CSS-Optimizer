@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>java23</title>
+<script language="javascript">
+function conver()
+{
+var f = document.convert.farin.value
+var con = (f - 32)*(5/9)
+document.convert.cels.value=(""+con+"")
+}
+</script>
+	</head>
+	<body>
+<form name="convert">
+<input type="text" name="farin"><input type="button" value="convert to Celsuis" onClick="conver()"><input type="text" name="cels">
+</form>
+
+	</body>
+</html>

@@ -1,0 +1,12 @@
+body {	color: #FFFFFF;	background-color: #895e27;}a:link {	color: #d8d8d8;	text-decoration: none;}a:visited {	text-decoration: none;	color: #0033FF;}a:hover {	color: #f1f1f1;	text-decoration: underline;}a:active {	text-decoration: none;}
+.theader TD{
+	/*background-color: #b97b3d;*/
+	height: 100%;
+	width: 180;
+	text-align: center;
+	white-space: nowrap;
+}
+.listing {
+	background-color: #b97b3d;
+	padding: 10;
+}

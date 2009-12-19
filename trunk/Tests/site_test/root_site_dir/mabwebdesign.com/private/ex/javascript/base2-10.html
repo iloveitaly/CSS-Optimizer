@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<style>
+	input.nostyle {
+		border-width: 1;
+	}
+	input.regbox, input.nostyle {
+		border-style: solid;
+		border-color: cccccc;
+		background-color: #FFFFFF;
+	}
+	input.regbox {
+		border-width: 3;
+	}
+	#cent TD {
+		text-align: center;
+	}
+	</style>
+<script language="javascript">
+var num = 10;
+var result = 100 & 99;
+var num_2 = 96;
+//document.write("100 & 99: "+result);
+function toBase10(num) {
+	var tstring = num;
+	while(isNaN(newnum = (parseInt(String(tstring), 2)))) {
+		if(tstring.length<=0) {
+			alert("no number found in text box");
+			return false;
+		}
+		tstring = tstring.substr(1);
+	}
+	document.main.input.value=tstring;
+	document.main.output.value=newnum;
+}
+function toBase2(num) {
+	var tstring = String(num);
+	//parses through the string to find a number
+	while(isNaN((newnum = parseFloat(tstring)))) {
+		if(tstring.length<=0) {
+			//if a number cant be found provide an error
+			alert("no number found in text box");
+			return false;
+		}
+		//cut off the first letter in the string to try to find
+		//a interger look at the parseFloat/parseInit functions for information
+		//on why this is nessicairy
+		tstring = tstring.substr(1);
+	}
+	//if number is found convert is to base 2 and display it
+	document.main2.output.value=tstring;
+	document.main2.output.value=newnum.toString(2);
+}
+</script>
+<form name="main">
+<table align="center" cellspacing="5" cellpadding="6" id="cent">
+	<tr>
+		<th>Enter Base 2 Number below</th>
+		<th>Converted to base 10</th>
+	</tr>
+	<tr>
+		<td><input type="text" size="20" name="input" class="regbox"></td>
+		<td><input type="text" size="20" name="output" class="nostyle" readonly="true"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="button" value="convert" onClick="toBase10(document.main.input.value);"></td>
+	</tr>
+</table>
+</form>
+<p><form name="main2">
+<table align="center" cellspacing="5" cellpadding="6" id="cent">
+	<tr>
+		<th>Enter Base 10 Number below</th>
+		<th>Converted to base 2</th>
+	</tr>
+	<tr>
+		<td><input type="text" size="20" name="input" class="regbox"></td>
+		<td><input type="text" size="20" name="output" class="nostyle" readonly="true"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="button" value="convert" onClick="toBase2(document.main2.input.value);"></td>
+	</tr>
+</table>
+</form>
+</p>
+	</body>
+</html>

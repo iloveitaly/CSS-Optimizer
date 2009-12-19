@@ -1,0 +1,586 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>Uncle Tom's Lottery Graph</title>
+		<style type="text/css">
+		.graphtbl {
+			border-style:solid;
+			border-color:gray;
+			margin-bottom:20px;
+		}
+		</style>
+	</head>
+	<body>
+	<center><h3>Information</h3></center>
+	<p>Hey Uncle Tom,<br />
+	Below are the graphs of the NH lottery numbers from the last 5 years. Each graph represents a number on the powerball ticket. 
+	Only numbers that ACTUALLY WON are displayed on the graphs, its pretty amazing how many numbers never won. The numbers places along the bottom represent the number that was chosen on the winning lottery ticket.
+	The number in the bar of the graph represents the amount of times the number was chosen. I wrote this program in record time, under 4 hours for everything including extracting the numbers, calculating the amounts, and plotting the graph.
+	E-mail me if you need anything!
+	<br />Mike</p>
+	<table class="graphtbl" height="300">
+		<tr>
+			<th colspan="32">Powerball Number 1</th>
+		</tr>
+		<tr>
+			<td valign="bottom"><div style="height:282px;background-color:#902c2c;color:white;overflow:hidden;text-align:center;">50</div></td>
+			<td valign="bottom"><div style="height:300px;background-color:#525220;color:white;overflow:hidden;text-align:center;">53</div></td>
+			<td valign="bottom"><div style="height:192px;background-color:#333301;color:white;overflow:hidden;text-align:center;">34</div></td>
+			<td valign="bottom"><div style="height:237px;background-color:#aa4614;color:white;overflow:hidden;text-align:center;">42</div></td>
+			<td valign="bottom"><div style="height:255px;background-color:#010101;color:white;overflow:hidden;text-align:center;">45</div></td>
+			<td valign="bottom"><div style="height:255px;background-color:#c66230;color:white;overflow:hidden;text-align:center;">45</div></td>
+			<td valign="bottom"><div style="height:141px;background-color:#7b1717;color:white;overflow:hidden;text-align:center;">25</div></td>
+			<td valign="bottom"><div style="height:147px;background-color:#bc5826;color:white;overflow:hidden;text-align:center;">26</div></td>
+			<td valign="bottom"><div style="height:159px;background-color:#791515;color:white;overflow:hidden;text-align:center;">28</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#2a2a2a;color:white;overflow:hidden;text-align:center;">22</div></td>
+			<td valign="bottom"><div style="height:141px;background-color:#141414;color:white;overflow:hidden;text-align:center;">25</div></td>
+			<td valign="bottom"><div style="height:120px;background-color:#9c3806;color:white;overflow:hidden;text-align:center;">21</div></td>
+			<td valign="bottom"><div style="height:102px;background-color:#973301;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:102px;background-color:#060606;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:96px;background-color:#030303;color:white;overflow:hidden;text-align:center;">17</div></td>
+			<td valign="bottom"><div style="height:90px;background-color:#b24e1c;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:45px;background-color:#aa4614;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:75px;background-color:#202020;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:45px;background-color:#181818;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:39px;background-color:#323200;color:white;overflow:hidden;text-align:center;">7</div></td>
+			<td valign="bottom"><div style="height:69px;background-color:#a84412;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:18px;background-color:#101010;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:27px;background-color:#741010;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:33px;background-color:#222222;color:white;overflow:hidden;text-align:center;">6</div></td>
+			<td valign="bottom"><div style="height:6px;background-color:#0e0e0e;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:24px;background-color:#2a2a2a;color:white;overflow:hidden;text-align:center;">4</div></td>
+			<td valign="bottom"><div style="height:24px;background-color:#650101;color:white;overflow:hidden;text-align:center;">4</div></td>
+			<td valign="bottom"><div style="height:18px;background-color:#c66230;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:12px;background-color:#2e2e2e;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:24px;background-color:#a74311;color:white;overflow:hidden;text-align:center;">4</div></td>
+			<td valign="bottom"><div style="height:6px;background-color:#b24e1c;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:6px;background-color:#161616;color:white;overflow:hidden;text-align:center;">1</div></td>
+		</tr>
+		<tr>
+			<td align="center">1</td>
+			<td align="center">2</td>
+			<td align="center">3</td>
+			<td align="center">4</td>
+			<td align="center">5</td>
+			<td align="center">6</td>
+			<td align="center">7</td>
+			<td align="center">8</td>
+			<td align="center">9</td>
+			<td align="center">10</td>
+			<td align="center">11</td>
+			<td align="center">12</td>
+			<td align="center">13</td>
+			<td align="center">14</td>
+			<td align="center">15</td>
+			<td align="center">16</td>
+			<td align="center">17</td>
+			<td align="center">18</td>
+			<td align="center">19</td>
+			<td align="center">20</td>
+			<td align="center">21</td>
+			<td align="center">22</td>
+			<td align="center">23</td>
+			<td align="center">24</td>
+			<td align="center">25</td>
+			<td align="center">26</td>
+			<td align="center">27</td>
+			<td align="center">29</td>
+			<td align="center">30</td>
+			<td align="center">31</td>
+			<td align="center">32</td>
+			<td align="center">37</td>
+		</tr>
+	</table>
+	<table class="graphtbl" height="300">
+		<tr>
+			<th colspan="42">Powerball Number 2</th>
+		</tr>
+		<tr>
+			<td valign="bottom"><div style="height:30px;background-color:#242424;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:78px;background-color:#323200;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:69px;background-color:#323200;color:white;overflow:hidden;text-align:center;">7</div></td>
+			<td valign="bottom"><div style="height:117px;background-color:#242424;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:165px;background-color:#343402;color:white;overflow:hidden;text-align:center;">17</div></td>
+			<td valign="bottom"><div style="height:183px;background-color:#c35f2d;color:white;overflow:hidden;text-align:center;">19</div></td>
+			<td valign="bottom"><div style="height:105px;background-color:#545422;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:282px;background-color:#0f0f0f;color:white;overflow:hidden;text-align:center;">29</div></td>
+			<td valign="bottom"><div style="height:231px;background-color:#0c0c0c;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:243px;background-color:#484816;color:white;overflow:hidden;text-align:center;">25</div></td>
+			<td valign="bottom"><div style="height:195px;background-color:#761212;color:white;overflow:hidden;text-align:center;">20</div></td>
+			<td valign="bottom"><div style="height:231px;background-color:#343402;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:270px;background-color:#1c1c1c;color:white;overflow:hidden;text-align:center;">28</div></td>
+			<td valign="bottom"><div style="height:213px;background-color:#4f4f1d;color:white;overflow:hidden;text-align:center;">22</div></td>
+			<td valign="bottom"><div style="height:300px;background-color:#3e3e0c;color:white;overflow:hidden;text-align:center;">31</div></td>
+			<td valign="bottom"><div style="height:261px;background-color:#bb5725;color:white;overflow:hidden;text-align:center;">27</div></td>
+			<td valign="bottom"><div style="height:156px;background-color:#60602e;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:231px;background-color:#9b3705;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:183px;background-color:#343402;color:white;overflow:hidden;text-align:center;">19</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#953131;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:183px;background-color:#181818;color:white;overflow:hidden;text-align:center;">19</div></td>
+			<td valign="bottom"><div style="height:156px;background-color:#050505;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:156px;background-color:#5a5a28;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:144px;background-color:#282828;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:195px;background-color:#9a3604;color:white;overflow:hidden;text-align:center;">20</div></td>
+			<td valign="bottom"><div style="height:105px;background-color:#222222;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:144px;background-color:#0a0a0a;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:105px;background-color:#c66230;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:78px;background-color:#2e2e2e;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:117px;background-color:#a74311;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:69px;background-color:#b24e1c;color:white;overflow:hidden;text-align:center;">7</div></td>
+			<td valign="bottom"><div style="height:69px;background-color:#8a2626;color:white;overflow:hidden;text-align:center;">7</div></td>
+			<td valign="bottom"><div style="height:78px;background-color:#4c4c1a;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:48px;background-color:#751111;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:30px;background-color:#9a3604;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:39px;background-color:#131313;color:white;overflow:hidden;text-align:center;">4</div></td>
+			<td valign="bottom"><div style="height:30px;background-color:#1a1a1a;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:30px;background-color:#585826;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:18px;background-color:#963200;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#c66230;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#242424;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#1c1c1c;color:white;overflow:hidden;text-align:center;">1</div></td>
+		</tr>
+		<tr>
+			<td align="center">2</td>
+			<td align="center">3</td>
+			<td align="center">4</td>
+			<td align="center">5</td>
+			<td align="center">6</td>
+			<td align="center">7</td>
+			<td align="center">8</td>
+			<td align="center">9</td>
+			<td align="center">10</td>
+			<td align="center">11</td>
+			<td align="center">12</td>
+			<td align="center">13</td>
+			<td align="center">14</td>
+			<td align="center">15</td>
+			<td align="center">16</td>
+			<td align="center">17</td>
+			<td align="center">18</td>
+			<td align="center">19</td>
+			<td align="center">20</td>
+			<td align="center">21</td>
+			<td align="center">22</td>
+			<td align="center">23</td>
+			<td align="center">24</td>
+			<td align="center">25</td>
+			<td align="center">26</td>
+			<td align="center">27</td>
+			<td align="center">28</td>
+			<td align="center">29</td>
+			<td align="center">30</td>
+			<td align="center">31</td>
+			<td align="center">32</td>
+			<td align="center">33</td>
+			<td align="center">34</td>
+			<td align="center">35</td>
+			<td align="center">36</td>
+			<td align="center">37</td>
+			<td align="center">38</td>
+			<td align="center">39</td>
+			<td align="center">40</td>
+			<td align="center">42</td>
+			<td align="center">44</td>
+			<td align="center">45</td>
+		</tr>
+	</table>
+	<table class="graphtbl" height="300">
+		<tr>
+			<th colspan="47">Powerball Number 3</th>
+		</tr>
+		<tr>
+			<td valign="bottom"><div style="height:9px;background-color:#343402;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#c05c2a;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:54px;background-color:#303030;color:white;overflow:hidden;text-align:center;">6</div></td>
+			<td valign="bottom"><div style="height:36px;background-color:#202020;color:white;overflow:hidden;text-align:center;">4</div></td>
+			<td valign="bottom"><div style="height:18px;background-color:#080808;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:45px;background-color:#131313;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:54px;background-color:#1c1c1c;color:white;overflow:hidden;text-align:center;">6</div></td>
+			<td valign="bottom"><div style="height:54px;background-color:#c15d2b;color:white;overflow:hidden;text-align:center;">6</div></td>
+			<td valign="bottom"><div style="height:72px;background-color:#2e2e2e;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:81px;background-color:#b04c1a;color:white;overflow:hidden;text-align:center;">9</div></td>
+			<td valign="bottom"><div style="height:72px;background-color:#000000;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:90px;background-color:#484816;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:156px;background-color:#640000;color:white;overflow:hidden;text-align:center;">17</div></td>
+			<td valign="bottom"><div style="height:219px;background-color:#191919;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:165px;background-color:#222222;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:183px;background-color:#831f1f;color:white;overflow:hidden;text-align:center;">20</div></td>
+			<td valign="bottom"><div style="height:201px;background-color:#ba5624;color:white;overflow:hidden;text-align:center;">22</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#313131;color:white;overflow:hidden;text-align:center;">14</div></td>
+			<td valign="bottom"><div style="height:210px;background-color:#6c0808;color:white;overflow:hidden;text-align:center;">23</div></td>
+			<td valign="bottom"><div style="height:108px;background-color:#010101;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#0e0e0e;color:white;overflow:hidden;text-align:center;">19</div></td>
+			<td valign="bottom"><div style="height:156px;background-color:#272727;color:white;overflow:hidden;text-align:center;">17</div></td>
+			<td valign="bottom"><div style="height:228px;background-color:#202020;color:white;overflow:hidden;text-align:center;">25</div></td>
+			<td valign="bottom"><div style="height:300px;background-color:#444412;color:white;overflow:hidden;text-align:center;">33</div></td>
+			<td valign="bottom"><div style="height:183px;background-color:#242424;color:white;overflow:hidden;text-align:center;">20</div></td>
+			<td valign="bottom"><div style="height:165px;background-color:#aa4614;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#60602e;color:white;overflow:hidden;text-align:center;">19</div></td>
+			<td valign="bottom"><div style="height:144px;background-color:#141414;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:237px;background-color:#922e2e;color:white;overflow:hidden;text-align:center;">26</div></td>
+			<td valign="bottom"><div style="height:135px;background-color:#1f1f1f;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:165px;background-color:#060606;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:210px;background-color:#323200;color:white;overflow:hidden;text-align:center;">23</div></td>
+			<td valign="bottom"><div style="height:117px;background-color:#c4602e;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:144px;background-color:#5b5b29;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:108px;background-color:#7a1616;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:99px;background-color:#1d1d1d;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:144px;background-color:#4e4e1c;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:54px;background-color:#343402;color:white;overflow:hidden;text-align:center;">6</div></td>
+			<td valign="bottom"><div style="height:45px;background-color:#121212;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:63px;background-color:#161616;color:white;overflow:hidden;text-align:center;">7</div></td>
+			<td valign="bottom"><div style="height:18px;background-color:#242424;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:45px;background-color:#1c1c1c;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:45px;background-color:#202020;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#6e0a0a;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#525220;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#202020;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#ba5624;color:white;overflow:hidden;text-align:center;">1</div></td>
+		</tr>
+		<tr>
+			<td align="center">4</td>
+			<td align="center">5</td>
+			<td align="center">6</td>
+			<td align="center">7</td>
+			<td align="center">8</td>
+			<td align="center">9</td>
+			<td align="center">10</td>
+			<td align="center">11</td>
+			<td align="center">12</td>
+			<td align="center">13</td>
+			<td align="center">14</td>
+			<td align="center">15</td>
+			<td align="center">16</td>
+			<td align="center">17</td>
+			<td align="center">18</td>
+			<td align="center">19</td>
+			<td align="center">20</td>
+			<td align="center">21</td>
+			<td align="center">22</td>
+			<td align="center">23</td>
+			<td align="center">24</td>
+			<td align="center">25</td>
+			<td align="center">26</td>
+			<td align="center">27</td>
+			<td align="center">28</td>
+			<td align="center">29</td>
+			<td align="center">30</td>
+			<td align="center">31</td>
+			<td align="center">32</td>
+			<td align="center">33</td>
+			<td align="center">34</td>
+			<td align="center">35</td>
+			<td align="center">36</td>
+			<td align="center">37</td>
+			<td align="center">38</td>
+			<td align="center">39</td>
+			<td align="center">40</td>
+			<td align="center">41</td>
+			<td align="center">42</td>
+			<td align="center">43</td>
+			<td align="center">44</td>
+			<td align="center">45</td>
+			<td align="center">46</td>
+			<td align="center">47</td>
+			<td align="center">48</td>
+			<td align="center">49</td>
+			<td align="center">50</td>
+		</tr>
+	</table>
+	<table class="graphtbl" height="300">
+		<tr>
+			<th colspan="45">Powerball Number 4</th>
+		</tr>
+		<tr>
+			<td valign="bottom"><div style="height:9px;background-color:#282828;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#c4602e;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:21px;background-color:#191919;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:21px;background-color:#121212;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#323200;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#030303;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#2e2e2e;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#191919;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:42px;background-color:#101010;color:white;overflow:hidden;text-align:center;">4</div></td>
+			<td valign="bottom"><div style="height:63px;background-color:#7c1818;color:white;overflow:hidden;text-align:center;">6</div></td>
+			<td valign="bottom"><div style="height:63px;background-color:#141414;color:white;overflow:hidden;text-align:center;">6</div></td>
+			<td valign="bottom"><div style="height:51px;background-color:#222222;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:102px;background-color:#0a0a0a;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:102px;background-color:#090909;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:165px;background-color:#161616;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:93px;background-color:#1b1b1b;color:white;overflow:hidden;text-align:center;">9</div></td>
+			<td valign="bottom"><div style="height:102px;background-color:#8e2a2a;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:84px;background-color:#1d1d1d;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:102px;background-color:#141414;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:102px;background-color:#131313;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:177px;background-color:#0a0a0a;color:white;overflow:hidden;text-align:center;">17</div></td>
+			<td valign="bottom"><div style="height:177px;background-color:#af4b19;color:white;overflow:hidden;text-align:center;">17</div></td>
+			<td valign="bottom"><div style="height:186px;background-color:#ac4816;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:207px;background-color:#922e2e;color:white;overflow:hidden;text-align:center;">20</div></td>
+			<td valign="bottom"><div style="height:186px;background-color:#202020;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:237px;background-color:#525220;color:white;overflow:hidden;text-align:center;">23</div></td>
+			<td valign="bottom"><div style="height:249px;background-color:#565624;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:186px;background-color:#bc5826;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:207px;background-color:#464614;color:white;overflow:hidden;text-align:center;">20</div></td>
+			<td valign="bottom"><div style="height:300px;background-color:#953131;color:white;overflow:hidden;text-align:center;">29</div></td>
+			<td valign="bottom"><div style="height:249px;background-color:#080808;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:249px;background-color:#720e0e;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:279px;background-color:#101010;color:white;overflow:hidden;text-align:center;">27</div></td>
+			<td valign="bottom"><div style="height:291px;background-color:#0f0f0f;color:white;overflow:hidden;text-align:center;">28</div></td>
+			<td valign="bottom"><div style="height:300px;background-color:#0c0c0c;color:white;overflow:hidden;text-align:center;">29</div></td>
+			<td valign="bottom"><div style="height:198px;background-color:#050505;color:white;overflow:hidden;text-align:center;">19</div></td>
+			<td valign="bottom"><div style="height:249px;background-color:#a23e0c;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:198px;background-color:#4e4e1c;color:white;overflow:hidden;text-align:center;">19</div></td>
+			<td valign="bottom"><div style="height:186px;background-color:#ba5624;color:white;overflow:hidden;text-align:center;">18</div></td>
+			<td valign="bottom"><div style="height:114px;background-color:#060606;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:93px;background-color:#101010;color:white;overflow:hidden;text-align:center;">9</div></td>
+			<td valign="bottom"><div style="height:102px;background-color:#4a4a18;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:42px;background-color:#5a5a28;color:white;overflow:hidden;text-align:center;">4</div></td>
+			<td valign="bottom"><div style="height:21px;background-color:#444412;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:9px;background-color:#181818;color:white;overflow:hidden;text-align:center;">1</div></td>
+		</tr>
+		<tr>
+			<td align="center">7</td>
+			<td align="center">8</td>
+			<td align="center">9</td>
+			<td align="center">10</td>
+			<td align="center">12</td>
+			<td align="center">13</td>
+			<td align="center">14</td>
+			<td align="center">15</td>
+			<td align="center">16</td>
+			<td align="center">17</td>
+			<td align="center">18</td>
+			<td align="center">19</td>
+			<td align="center">20</td>
+			<td align="center">21</td>
+			<td align="center">22</td>
+			<td align="center">23</td>
+			<td align="center">24</td>
+			<td align="center">25</td>
+			<td align="center">26</td>
+			<td align="center">27</td>
+			<td align="center">28</td>
+			<td align="center">29</td>
+			<td align="center">30</td>
+			<td align="center">31</td>
+			<td align="center">32</td>
+			<td align="center">33</td>
+			<td align="center">34</td>
+			<td align="center">35</td>
+			<td align="center">36</td>
+			<td align="center">37</td>
+			<td align="center">38</td>
+			<td align="center">39</td>
+			<td align="center">40</td>
+			<td align="center">41</td>
+			<td align="center">42</td>
+			<td align="center">43</td>
+			<td align="center">44</td>
+			<td align="center">45</td>
+			<td align="center">46</td>
+			<td align="center">47</td>
+			<td align="center">48</td>
+			<td align="center">49</td>
+			<td align="center">50</td>
+			<td align="center">51</td>
+			<td align="center">52</td>
+		</tr>
+	</table>
+	<table class="graphtbl" height="300">
+		<tr>
+			<th colspan="37">Powerball Number 5</th>
+		</tr>
+		<tr>
+			<td valign="bottom"><div style="height:6px;background-color:#842020;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:6px;background-color:#363604;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:12px;background-color:#131313;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:12px;background-color:#b65220;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:12px;background-color:#272727;color:white;overflow:hidden;text-align:center;">2</div></td>
+			<td valign="bottom"><div style="height:6px;background-color:#101010;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:6px;background-color:#2d2d2d;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:6px;background-color:#282828;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:18px;background-color:#953131;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:18px;background-color:#626230;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:18px;background-color:#444412;color:white;overflow:hidden;text-align:center;">3</div></td>
+			<td valign="bottom"><div style="height:6px;background-color:#222222;color:white;overflow:hidden;text-align:center;">1</div></td>
+			<td valign="bottom"><div style="height:36px;background-color:#333301;color:white;overflow:hidden;text-align:center;">6</div></td>
+			<td valign="bottom"><div style="height:30px;background-color:#9e3a08;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:30px;background-color:#050505;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:39px;background-color:#a84412;color:white;overflow:hidden;text-align:center;">7</div></td>
+			<td valign="bottom"><div style="height:45px;background-color:#5e5e2c;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:69px;background-color:#565624;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:69px;background-color:#343402;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:81px;background-color:#8e2a2a;color:white;overflow:hidden;text-align:center;">14</div></td>
+			<td valign="bottom"><div style="height:45px;background-color:#464614;color:white;overflow:hidden;text-align:center;">8</div></td>
+			<td valign="bottom"><div style="height:75px;background-color:#7a1616;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:114px;background-color:#b04c1a;color:white;overflow:hidden;text-align:center;">20</div></td>
+			<td valign="bottom"><div style="height:99px;background-color:#2c2c2c;color:white;overflow:hidden;text-align:center;">17</div></td>
+			<td valign="bottom"><div style="height:186px;background-color:#202020;color:white;overflow:hidden;text-align:center;">32</div></td>
+			<td valign="bottom"><div style="height:150px;background-color:#282828;color:white;overflow:hidden;text-align:center;">26</div></td>
+			<td valign="bottom"><div style="height:162px;background-color:#232323;color:white;overflow:hidden;text-align:center;">28</div></td>
+			<td valign="bottom"><div style="height:189px;background-color:#363604;color:white;overflow:hidden;text-align:center;">33</div></td>
+			<td valign="bottom"><div style="height:213px;background-color:#2a2a2a;color:white;overflow:hidden;text-align:center;">37</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#1a1a1a;color:white;overflow:hidden;text-align:center;">30</div></td>
+			<td valign="bottom"><div style="height:231px;background-color:#882424;color:white;overflow:hidden;text-align:center;">40</div></td>
+			<td valign="bottom"><div style="height:300px;background-color:#4e4e1c;color:white;overflow:hidden;text-align:center;">52</div></td>
+			<td valign="bottom"><div style="height:282px;background-color:#0b0b0b;color:white;overflow:hidden;text-align:center;">49</div></td>
+			<td valign="bottom"><div style="height:162px;background-color:#3e3e0c;color:white;overflow:hidden;text-align:center;">28</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#983402;color:white;overflow:hidden;text-align:center;">22</div></td>
+			<td valign="bottom"><div style="height:138px;background-color:#882424;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:105px;background-color:#1c1c1c;color:white;overflow:hidden;text-align:center;">18</div></td>
+		</tr>
+		<tr>
+			<td align="center">10</td>
+			<td align="center">11</td>
+			<td align="center">19</td>
+			<td align="center">20</td>
+			<td align="center">21</td>
+			<td align="center">22</td>
+			<td align="center">23</td>
+			<td align="center">24</td>
+			<td align="center">25</td>
+			<td align="center">26</td>
+			<td align="center">27</td>
+			<td align="center">28</td>
+			<td align="center">29</td>
+			<td align="center">30</td>
+			<td align="center">31</td>
+			<td align="center">32</td>
+			<td align="center">33</td>
+			<td align="center">34</td>
+			<td align="center">35</td>
+			<td align="center">36</td>
+			<td align="center">37</td>
+			<td align="center">38</td>
+			<td align="center">39</td>
+			<td align="center">40</td>
+			<td align="center">41</td>
+			<td align="center">42</td>
+			<td align="center">43</td>
+			<td align="center">44</td>
+			<td align="center">45</td>
+			<td align="center">46</td>
+			<td align="center">47</td>
+			<td align="center">48</td>
+			<td align="center">49</td>
+			<td align="center">50</td>
+			<td align="center">51</td>
+			<td align="center">52</td>
+			<td align="center">53</td>
+		</tr>
+	</table>
+	<table class="graphtbl" height="300">
+		<tr>
+			<th colspan="42">Powerball Powerball Number</th>
+		</tr>
+		<tr>
+			<td valign="bottom"><div style="height:189px;background-color:#902c2c;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:264px;background-color:#525220;color:white;overflow:hidden;text-align:center;">21</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#333301;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:189px;background-color:#aa4614;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#010101;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:201px;background-color:#c66230;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#7b1717;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#bc5826;color:white;overflow:hidden;text-align:center;">14</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#791515;color:white;overflow:hidden;text-align:center;">14</div></td>
+			<td valign="bottom"><div style="height:150px;background-color:#2a2a2a;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:150px;background-color:#141414;color:white;overflow:hidden;text-align:center;">12</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#9c3806;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:162px;background-color:#973301;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:138px;background-color:#060606;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:162px;background-color:#030303;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:138px;background-color:#b24e1c;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#aa4614;color:white;overflow:hidden;text-align:center;">14</div></td>
+			<td valign="bottom"><div style="height:162px;background-color:#202020;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:138px;background-color:#181818;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:288px;background-color:#323200;color:white;overflow:hidden;text-align:center;">23</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#a84412;color:white;overflow:hidden;text-align:center;">14</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#101010;color:white;overflow:hidden;text-align:center;">14</div></td>
+			<td valign="bottom"><div style="height:162px;background-color:#741010;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:63px;background-color:#222222;color:white;overflow:hidden;text-align:center;">5</div></td>
+			<td valign="bottom"><div style="height:201px;background-color:#0e0e0e;color:white;overflow:hidden;text-align:center;">16</div></td>
+			<td valign="bottom"><div style="height:138px;background-color:#2a2a2a;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#650101;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:174px;background-color:#6e0a0a;color:white;overflow:hidden;text-align:center;">14</div></td>
+			<td valign="bottom"><div style="height:138px;background-color:#2a2a2a;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:126px;background-color:#080808;color:white;overflow:hidden;text-align:center;">10</div></td>
+			<td valign="bottom"><div style="height:300px;background-color:#a4400e;color:white;overflow:hidden;text-align:center;">24</div></td>
+			<td valign="bottom"><div style="height:138px;background-color:#262626;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:189px;background-color:#555523;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:189px;background-color:#821e1e;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:276px;background-color:#aa4614;color:white;overflow:hidden;text-align:center;">22</div></td>
+			<td valign="bottom"><div style="height:162px;background-color:#303030;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:249px;background-color:#922e2e;color:white;overflow:hidden;text-align:center;">20</div></td>
+			<td valign="bottom"><div style="height:138px;background-color:#680404;color:white;overflow:hidden;text-align:center;">11</div></td>
+			<td valign="bottom"><div style="height:189px;background-color:#1a1a1a;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:162px;background-color:#963200;color:white;overflow:hidden;text-align:center;">13</div></td>
+			<td valign="bottom"><div style="height:189px;background-color:#50501e;color:white;overflow:hidden;text-align:center;">15</div></td>
+			<td valign="bottom"><div style="height:87px;background-color:#242424;color:white;overflow:hidden;text-align:center;">7</div></td>
+		</tr>
+		<tr>
+			<td align="center">1</td>
+			<td align="center">2</td>
+			<td align="center">3</td>
+			<td align="center">4</td>
+			<td align="center">5</td>
+			<td align="center">6</td>
+			<td align="center">7</td>
+			<td align="center">8</td>
+			<td align="center">9</td>
+			<td align="center">10</td>
+			<td align="center">11</td>
+			<td align="center">12</td>
+			<td align="center">13</td>
+			<td align="center">14</td>
+			<td align="center">15</td>
+			<td align="center">16</td>
+			<td align="center">17</td>
+			<td align="center">18</td>
+			<td align="center">19</td>
+			<td align="center">20</td>
+			<td align="center">21</td>
+			<td align="center">22</td>
+			<td align="center">23</td>
+			<td align="center">24</td>
+			<td align="center">25</td>
+			<td align="center">26</td>
+			<td align="center">27</td>
+			<td align="center">28</td>
+			<td align="center">29</td>
+			<td align="center">30</td>
+			<td align="center">31</td>
+			<td align="center">32</td>
+			<td align="center">33</td>
+			<td align="center">34</td>
+			<td align="center">35</td>
+			<td align="center">36</td>
+			<td align="center">37</td>
+			<td align="center">38</td>
+			<td align="center">39</td>
+			<td align="center">40</td>
+			<td align="center">41</td>
+			<td align="center">42</td>
+		</tr>
+	</table>
+	<table class="graphtbl" height="300">
+		<tr>
+			<th colspan="6">Powerball Powerplay Number</th>
+		</tr>
+		<tr>
+			<td valign="bottom"><div style="height:225px;background-color:#000000;color:white;overflow:hidden;text-align:center;">123</div></td>
+			<td valign="bottom"><div style="height:54px;background-color:#a84412;color:white;overflow:hidden;text-align:center;">30</div></td>
+			<td valign="bottom"><div style="height:165px;background-color:#343402;color:white;overflow:hidden;text-align:center;">91</div></td>
+			<td valign="bottom"><div style="height:147px;background-color:#444412;color:white;overflow:hidden;text-align:center;">80</div></td>
+			<td valign="bottom"><div style="height:144px;background-color:#040404;color:white;overflow:hidden;text-align:center;">79</div></td>
+			<td valign="bottom"><div style="height:300px;background-color:#535321;color:white;overflow:hidden;text-align:center;">164</div></td>
+		</tr>
+		<tr>
+			<td align="center">0</td>
+			<td align="center">1</td>
+			<td align="center">2</td>
+			<td align="center">3</td>
+			<td align="center">4</td>
+			<td align="center">5</td>
+		</tr>
+	</table>

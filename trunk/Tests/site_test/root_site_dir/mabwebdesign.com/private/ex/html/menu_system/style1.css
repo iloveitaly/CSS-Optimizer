@@ -1,0 +1,48 @@
+.maintbl {
+	width:100%	
+}
+.holder {
+	vertical-align:top;
+	width: 100%;
+	height:100%;
+}
+.holder .bar {
+	/*the text might not be perfectly aligned because the background image
+	might not be perfectly centered*/
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	height: 72;
+	background-image: url(bar.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+	background-color: #595959;
+}
+/*must use ID instead of class because the parent tag is already 'styled' 
+so you have to use ID to define a child element*/
+#optiontxt {
+	vertical-align: middle;
+	text-align: center;
+	color: black;
+}
+/*the padding for the option bar*/
+#optiontxt TD {
+	padding-left: 5;
+	padding-right: 10;
+}
+
+.maintbl .bottom {
+	height:100%;
+	width:100%;
+	background-color:#595959;
+	text-align:center;
+}
+.holder .toparea {
+	color: white;
+	font-weight: bold;
+	font-size:50;
+	letter-spacing: 10;
+	font-family: arial, times;
+	background-color:#999999;
+	vertical-align: top;
+}

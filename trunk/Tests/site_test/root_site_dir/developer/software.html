@@ -1,0 +1,42 @@
+<?php
+include_once "includes/php/softwareparser.php";
+$software = new softwareParser();
+$software->parseXML("includes/xml/software.xml");
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Computer Software</title>
+<?php include "includes/html/meta.html"; ?>
+		<link rel="stylesheet" type="text/css" href="includes/css/main.css">
+		<link rel="stylesheet" type="text/css" href="includes/css/software.css">
+		<script language="javascript" type="text/javascript" src="includes/js/main.js"></script>
+	</head>
+	<body>
+	<div id="page_title">Software</div>
+	<?php include "includes/html/menu.html"; ?>
+	<div id="content_holder">
+		<div class="topimg"><img src="images/content/top_tile.gif"></div>
+		<div class="content">
+			<div style="text-align:center;">
+				<h3>Software</h3>
+				<p>Below is a list of software I written, hopefully you will find it usefull.<br />
+				Many, many hours of time went into to writing these applications. If you find any of them usefull, consider sending a small donation using the button below.<br />
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+				</form>
+				</p>
+			</div><br />
+			<div id="softwarelist">
+				<?php
+				$software->display();
+				?>
+			</div>
+		</div>
+		<div class="botimg"><img src="images/content/bottom_tile.gif"></div>
+	</div>
+	</body>
+</html>

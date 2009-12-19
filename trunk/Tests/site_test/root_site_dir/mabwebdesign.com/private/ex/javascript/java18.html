@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>java18</title>
+<script language="javascript">
+function change(color)
+{
+document.bgColor=""+color+""
+document.form.clr.value=("you chose "+color+"")
+}
+</script>
+	</head>
+	<body onUnLoad="alert('cool huh?')">
+<form name=form>
+<p><input type="text" name="clr">
+<br><input type="button" value="green" onClick="change('green')"><input type="button" value="blue" onClick="change('blue')"><input type="button" value="red" onClick="change('red')">
+</form>
+
+	</body>
+</html>

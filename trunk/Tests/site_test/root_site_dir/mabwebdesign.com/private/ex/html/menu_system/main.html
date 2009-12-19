@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+	<head>
+		<title>Menu System</title>
+		<link rel="stylesheet" type="text/css" href="style1.css" title="orange">
+		<link rel="alternate stylesheet" type="text/css" href="style2.css" title="white">
+		<style>
+		<!--
+		BODY, HTML {
+			height:100%;
+			width:100%;
+			font-family: arial, times;
+		}
+		-->
+		</style>
+	</head>
+	<script language="javascript">
+		styles = document.getElementsByTagName("link"); //defines the main style varibal
+		function disableAll() { //disables all the styles
+			for(d=0; d!=styles.length; d++) {
+				styles[d].disabled = true;
+			}
+		}
+		function switchS(style) { //switches the styles
+			disableAll()
+			for(c=0; c!=styles.length; c++) {
+				if(styles[c].title==style) {
+					//the disabled attribute determines if the style 
+					//is active on the page or not
+					styles[c].disabled = false;
+					break;
+				}
+			}
+		}
+		//sets the default style
+		disableAll()
+		styles[1].disabled = false;
+		</script>
+<body topmargin="0" leftmargin="0">
+<table class="maintbl" cellspacing="0" border="0" cellpadding="0" height="100%" width="100%">
+<tr valign="top">
+	<td>
+	<table class="holder" border="0" cellspacing="0">
+		<tr class="toparea">
+			<td>MY SITE</td>
+		</tr>
+		<tr nowrap>
+			<td class="bar">
+				<table cellspacing="0" cellpadding="0" align="center" border="0">
+					<tr id="optiontxt">
+						<td>Option One</td>
+						<td>Option Two</td>
+						<td>Option Three</td>
+						<td>Option Four</td>
+						<td>Option Five</td>
+						<td>Option Six</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	</td>
+</tr>
+<tr class="bottom">
+	<td>
+	<!--
+	Is seems that you cannot use the @import to determine style sheets and must use a link
+	with a rel attrib equaling either "stylesheet", and if it is a second stylesheet is must
+	equal "alternate stylesheet", it must also have a title.
+	this is some pretty cool stuff!
+	
+	below is the style switcher
+	-->
+	<select onChange="switchS(this.value)">
+	<option value="white">White</option>
+	<option value="orange">Orange</option>
+	</select>
+	</td>
+</tr>
+</table>
+</body>
+</html>

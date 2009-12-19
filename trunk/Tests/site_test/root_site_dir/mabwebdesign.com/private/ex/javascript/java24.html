@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>java24</title>
+<script language="javascript">
+function win()
+{
+var now = new Date()
+var sec = now.getSeconds()
+var num1 = (sec)%3
+var num2 = (sec)%4
+var num3 = (sec)%5
+var lot1 = num1+1
+var lot2 = num2+1
+var lot3 = num3+1
+alert("Heres the winning numbers: " +lot1+ " " +lot2+ " " +lot3+ "")
+}
+</script>
+	</head>
+	<body>
+<input type="button" value="get some winning lottery numbers!" onClick="win()">
+
+	</body>
+</html>

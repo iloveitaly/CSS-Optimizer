@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+<!--load all javascript stuff and create a new title-->
+<script language="javascript">
+</script>
+
+<script language="javascript">
+//make new vabals for title
+var fr = prompt('whats you whole name');
+document.write("<title>yo "+fr+", welcome to java13 example!</title>");
+// start new function
+function newwin()
+{
+var opwin = window.open("","pop-up","height=300,width=500","toolbar=0","menubar=0","scrollbars=0","resizable=1","status=0");
+//start wiriting html for new window
+opwin.document.write("<html>")
+opwin.document.write("<head>")
+opwin.document.write("</head>")
+opwin.document.write("<body bgColor='green'>")
+opwin.document.write("<center><h4>cool new pop up window huh?</center></h4>")
+opwin.document.write("<p><h5>do stuff using the controls below</h5>")
+opwin.document.write("<p><input type='button' value='close window' onClick='self.close()'>")
+opwin.document.write("<br><a href='' onClick='self.close()'>Click this to close it</a>")
+opwin.document.write("<p><input type='button' value='go to the forums' onClick='location.href=/forums'>")
+opwin.document.write("</body>")
+opwin.document.write("</html>")
+}
+</script>
+
+
+	</head>
+	<body>
+<center><h2>Click the link below to make a pop up window that changes depending on what stuff u put in!</center></h2>
+<p><input type="button" value="click here to make a cool pop up window" onClick="newwin()">
+
+	</body>
+</html>

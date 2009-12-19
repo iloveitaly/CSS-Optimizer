@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title></title>
+	</head>
+	<body>
+<SCRIPT LANGUAGE="javascript">
+var name = prompt("What is your name?","Write It Here")
+var email = prompt("What is your email address", "Write It Here")
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE="javascript">    
+function verify()     
+{    
+var OpenWindow=window.open("", "newwin", "height=300,width=300");  
+OpenWindow.document.write("<HTML>")  
+OpenWindow.document.write("<TITLE>Thanks for Writing</TITLE>")  
+OpenWindow.document.write("<BODY BGCOLOR='ffffcc'>")  
+OpenWindow.document.write("<CENTER>")  
+OpenWindow.document.write("Thank you <B>" + name + "</B> from <B>" +email+ "</B><P>")  
+OpenWindow.document.write("Your message <P><I>" + document.gbookForm.maintext.value + "</I><P>")
+OpenWindow.document.write("from " + name + " / " +email+ "<P>")           
+OpenWindow.document.write("will be sent along when you close this window.<p>")    
+OpenWindow.document.write("<CENTER>")             
+OpenWindow.document.write("<FORM><INPUT TYPE='button' VALUE='Close Window' onClick='self.close()'></FORM>")
+OpenWindow.document.write("</CENTER>")           
+OpenWindow.document.write("</HTML>")
+}   
+</SCRIPT>  
+<script language="javascript">
+function page()
+{
+location.href="pages/java19sub.html"
+}
+</script>
+
+      
+<SCRIPT LANGUAGE='javascript'>
+
+
+document.write("<FORM METHOD='post' ACTION='mailto:themaster@private.mabwebdesign.com?Subject=Mail from " +name+ " at " +email+ "' ENCTYPE='text/plain' NAME='gbookForm'>")
+
+</SCRIPT>
+
+<b>What would you like to tell me?<BR></b>
+<TEXTAREA COLS="40"  ROWS="20" NAME="maintext"></TEXTAREA><P>
+<INPUT TYPE="submit" VALUE="Send It"  onClick="verify();
+page();
+">
+</FORM>
+
+	</body>
+</html>

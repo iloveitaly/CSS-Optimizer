@@ -1,0 +1,45 @@
+.maintbl {
+	width:100%;
+	height:100%;
+}
+.holder {
+	vertical-align:top;
+	width: 100%;
+	height:100%;
+}
+.holder .bar {
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	height: 72;
+	background-image: url(bar2.gif);
+	background-repeat: repeat-x;
+	background-position: middle center;
+	background-color: #B2D1FF;
+}
+#optiontxt {
+	height: 72;
+	vertical-align: middle;
+	text-align: center;
+	color: #7F7F7F;
+}
+#optiontxt TD {
+	height: 72;
+	padding-left: 5;
+	padding-right: 10;
+}
+.maintbl .bottom {
+	height:100%;
+	width:100%;
+	background-color: #B2D1FF;
+	text-align:center;
+}
+.holder .toparea {
+	color: white;
+	font-weight: bold;
+	font-size:50;
+	letter-spacing: 10;
+	font-family: arial, times;
+	background-color:#7F7F7F;
+	vertical-align: top;
+}

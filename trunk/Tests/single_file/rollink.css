@@ -1,0 +1,811 @@
+div.autocompleter-loading
+{
+	float:					left;
+	clear:					right;
+	background:				#fff url(../../images/icons/spinner.gif) no-repeat center;
+	width:					20px;
+	height:					16px;
+}
+
+ul.autocompleter-choices
+{
+	position:				absolute;
+	margin:					0;
+	padding:				0;
+	list-style:				none;
+	border:					1px solid #eee;
+	background-color:		white;
+	border-right-color:		#ddd;
+	border-bottom-color:	#ddd;
+	text-align:				left;
+	font-family:			Verdana, Geneva, Arial, Helvetica, sans-serif;
+	z-index:				50;
+}
+
+ul.autocompleter-choices li
+{
+	position:				relative;
+	padding:				0.1em 1.5em 0.1em 1em;
+	cursor:					pointer;
+	font-weight:			normal;
+	font-size:				1em;
+}
+
+ul.autocompleter-choices li.autocompleter-selected
+{
+	background-color:		#444;
+	color:					#fff;
+}
+
+ul.autocompleter-choices span.autocompleter-queried
+{
+	font-weight:			bold;
+}
+
+ul.autocompleter-choices li.autocompleter-selected span.autocompleter-queried
+{
+	color:					#9FCFFF;
+}/* moodalbox CSS */
+
+div#mb_overlay {
+	position: absolute;
+	left: 0;
+	background-color: #000;
+	cursor: pointer;
+}
+
+div#mb_center {
+	position: absolute;
+	left: 50%;
+	overflow: hidden;
+	background-color: #DDD;
+}
+
+div#mb_center {
+	background-color: #FFF;
+}
+
+div#mb_contents {
+	padding:5px;
+	text-align:center;
+	width: 400px;
+	height: 400px;
+	border: 1px solid #DDD;
+	overflow: hidden;
+	background-color: #FFF;
+}
+	
+	div#mb_contents .css_form label {
+		width:20%;
+	}
+	
+	div#mb_contents .css_form input, div#mb_contents .css_form textarea {
+		width: 70%;
+	}
+	
+	div#mb_contents .css_form select {
+		float:left;
+	}
+	
+	div#mb_contents .bottom_buttons input {
+		width: auto;
+	}
+
+.mb_loading {
+	background: #DDD url('../../images/moodalbox/loading.gif') no-repeat center center;
+}
+
+#mb_error {
+	font-size: 1.2em;
+	color: #CD0000;
+	font-weight: bold;
+	text-align: center;
+	padding: 0.5em;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+	#mb_error em {
+		font-size: 0.8em;
+	}
+/* reset http://bjorkoy.com/blueprint/css/blueprint/lib/reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+	/* we used to define font-size: 100%; but that conflicted with the font size definition below */
+}
+
+/*
+	Input elements (such as checkboxes specifically) aren't reset in the above statement.
+	To fix alignment issues such as checkboxes and there labels you must set margin:0
+ */
+
+body {
+	background-color: #d3e6c4;
+	font: 62.5%/1.85em "Lucida Grande", "Lucida Sans Unicode",geneva,verdana,sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+}
+
+hr {
+	height:2px; /* make all browsers work like mozilla */
+}
+
+/* Redefine the paragraph tag */
+p {
+	margin:1em 0;
+}
+
+/* makes sure the hidden fields stay hidden */
+input[type="hidden"] { display:none !important; }
+
+/* Content navigation bar (result pp, view by, page #s) */
+.content_nav {
+	color:black;
+	font-size:1.2em;
+	
+	/* Make it like a content box*/
+	margin:0 17px 10px 17px;
+}
+	.content_nav .left_content {
+		
+	}
+	
+	.content_nav .right_content {
+		float:right;
+	}
+	
+		.content_nav a {
+			color:#c2222a;
+			text-decoration:none;
+		}
+		
+		.content_nav a:hover {
+			text-decoration:underline;
+		}
+
+/* colored content boxes */
+.content_box {
+	margin-right:18px;	/* 10px padding off the white, 8px for the right background area */
+	margin-bottom:10px;	/* padding between the content boxes */
+}
+
+	/* for the content area inside the boxes */
+	.content_area {
+		padding:0 17px;
+		color: white;
+	}
+	
+		/* Set the default link settings */
+		.content_area a {
+			color: #bfbfbf;
+			text-decoration:underline;
+		}
+		
+		.content_area a:hover {
+			color:white;
+			
+		}
+		
+		.content_area a.button_link {
+			padding-right:10px;
+			font-size:1.2em;
+			text-decoration:none;
+		}
+		
+		.content_area a:hover.button_link {
+			text-decoration:underline;
+		}
+		
+		/* This is mainly for the search form */
+		.content_area input {
+			font-size:1.3em;
+			margin:3px;
+		}
+
+		.content_area h2 {
+			color:white;
+			font-size: 1.5em;
+		}
+
+/* Search form styles */
+#search_form {
+	font-size:1.2em;
+	line-height:2;
+}
+
+	#search_form select, #search_form input {
+		margin:3px;
+		font-size:1em;
+	}
+
+	#advanced_search {
+		display:none;
+	}
+	
+		#advanced_search p {
+			margin:0 0 .5em 0; /* bottom padding only */
+		}
+
+/* Main site styles */
+#main_holder {
+	width:581px; /* the real width of the area is 565 */
+	margin:0 auto;
+	
+	background:white url('../../images/background-tile.png') repeat-y;
+}
+
+	#header {
+		height:110px;
+		margin:0 8px;
+		padding-right:10px;
+		background:url('../../images/header/top_grad.png') repeat-x top;
+	
+		font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	}
+		
+			#header a {
+				float:right;
+				display:block;
+				height:90px;
+				padding:0 15px;
+				line-height:7;
+				background: url('../../images/header/sep.png') no-repeat left;
+	
+				color: #9a8574;
+				text-decoration:none;
+				font-size:1.6em;
+	
+			}
+
+			#header a:hover {
+				color:#6c594a;
+			}
+			
+			#header #lastsep {
+				background: url('../../images/header/sep.png') no-repeat left;
+				float:right;
+				height:90px;
+				line-height:7;
+				font-size:1.3em;
+			}
+	
+	/* The user status box is the only box that is positioned to the right */
+	#user_status_holder, #login_holder {
+		margin-left:120px;
+		margin-right:0;
+	}
+	
+	#user_status_holder {
+		background-color:#375c76;
+		color:white;
+	}
+	
+		#user_status_holder td {
+			vertical-align:top;
+		}
+	
+	#login_holder {
+		
+	}
+		#login_holder td {
+			font-size:1.1em;
+		}
+		
+		#login_holder td input {
+			font-size:1em;
+		}
+		
+			#login_holder .input_holder label, #login_holder .input_holder input {
+				display:block;
+				float: left;
+			}
+
+			#login_holder .input_holder label {
+				padding-top:3px;
+				padding-right:4px;
+				text-align: right;
+				width: 70px;
+			}
+			
+			#login_holder .input_holder br {
+				clear:both;
+			}
+		
+		#login_holder .login_link_box, #user_status_holder .login_link_box {
+			font-size:xx-small;
+/*			line-height:1.5;*/
+		}
+		
+			#login_holder .login_link_box a, #user_status_holder .login_link_box a {
+				color:white;
+				text-decoration:none;
+			}
+			
+			#login_holder .login_link_box a:hover, #user_status_holder .login_link_box a:hover {
+				text-decoration:underline;
+			}
+	
+	#site_path_holder {
+		font-size:1.3em;
+		color:black;
+	}
+	
+		#site_path_holder .action_button {
+			float:right;
+			margin-top:1em;
+		}
+		
+		/* There are two types of messages: titles and search results */
+
+		#site_path_holder .site_message_result, #site_path_holder .site_message_title, #site_path_holder .site_path_string {
+			padding:3px;
+		}
+		
+			#site_path_holder .site_path_string a {
+				color:#c2222a;
+				text-decoration:none;
+			}
+			
+			#site_path_holder .site_path_string a:hover {
+				text-decoration:underline;
+			}
+		
+		#site_path_holder .site_message_result, #site_path_holder .site_message_title {
+			font-weight:bold;
+		}
+	
+		#site_path_holder .site_message_result {
+			color: #3d6278;
+		}
+		
+		#site_path_holder .site_message_title {
+			color: #6c594a;
+		}
+		
+	#footer {
+		height:60px;
+	
+		font-family: Arial, "MS Trebuchet", sans-serif;
+		font-size: x-small;
+		background: url('../../images/corners/footer/bottom.png') no-repeat bottom center;			
+	}
+
+		#footer a {
+			color: gray;
+		}
+
+		#footer a:hover {
+			color: black;
+		}
+
+/* For the view all link that is used throughout the site */
+a.view_all {
+	font-size:1.2em;
+	color:white;
+	text-decoration:none;
+	
+	/* put the green arrow on the right of the link */
+	padding-right:12px;
+	background:url('../../images/icons/green_arrow.gif') no-repeat center right;
+}
+
+a:hover.view_all {
+	text-decoration:underline;
+}
+
+/* for the view photos button */
+.photo_link {
+	padding-left:18px;
+	background:url('../../images/icons/view_photos.gif') no-repeat center left;
+}
+
+/* Simple white border around image */
+img.white_border {
+	border: 2px solid #b1b2a4;
+}
+
+.nolineheight {line-height:0;} /* for the rounded corners, makes the images alone determine the height of the box */
+.clearfix2 {clear:both;height:0;overflow:hidden;float:none !important;}
+
+/* Photo section css */
+#photo_browse_list img {
+	float:left;
+	margin:5px;
+	border: 2px solid #b1b2a4;
+}
+
+/* for the question messages that are sometimes placed at the bottom of the page */
+.bottom_message {
+	padding-left:17px;
+	line-height:25px;
+}
+	.bottom_message h2, .bottom_message img {
+		vertical-align:middle;
+	}
+	
+	.bottom_message h2 {
+		display:inline;
+		color:#696546 !important;
+	}
+
+/* for the the mini user box used for the 'attending' section on the calendar and the 'friends' section on the profile */	
+.mini_user_box {
+	vertical-align:middle;
+	line-height:25px;
+	color:white;
+	float:left;
+	margin:2px;
+}
+
+	.mini_user_box img {
+		vertical-align:middle;
+		border: 1px solid #FFF;
+	}
+	
+	.mini_user_box a {
+		text-decoration:none;
+		color:white;
+	}
+	
+	.mini_user_box a:hover {
+		text-decoration:underline;
+	}
+
+/* for the comment boxes */
+.comment_box {
+	margin-bottom:10px;
+}
+
+	.comment_box img {
+		float:left;
+		border: 2px solid #404d39;
+		margin-right:5px;
+	}
+	
+	.comment_box .comment_posted_by {
+		font-size:1.2em;
+		font-weight:bold;
+		color: #d3e6c4;
+	}
+	
+	.comment_box .comment_info {
+		color: #c1c1c1;
+	}
+	
+		.comment_box .comment_info a {
+			color:#c1c1c1;
+		}
+		
+		.comment_box .comment_info a:hover {
+			color:white;
+		}
+
+/* css form */
+.css_form {
+	margin:0 auto; /* centers the form */
+}
+	.css_form .error_text {
+		font-weight:bold;
+		color:white;
+	}
+	
+	.css_form h1 {
+		text-align:center;
+	}
+	
+	.css_form label, .css_form input, .css_form textarea {
+		display: block;
+		width: 200px;
+		float: left;
+		margin-bottom: 10px;
+		font-size:1.3em;
+	}
+
+	.css_form label {
+		text-align: right;
+		width: 90px;
+		padding-right: 20px;
+	}
+
+	.css_form br {
+		clear: left;
+	}
+
+	.css_form .bottom_buttons {
+		text-align:center;
+	}
+		.css_form .bottom_buttons input {
+			width:auto;
+			float:none;
+			display:inline;
+		}
+
+#yellow_mini_user_list_holder a, #yellow_mini_user_list_holder a:hover {
+	color:#6c594a;
+}
+
+/* get the checkboxes to align nicely (workout the input styles for css forms) */
+#network_checkboxes {
+	float:left;
+}
+
+	#network_checkboxes label, #network_checkboxes input {
+		/* we want all the network options in a list when in non-searching forms... this cancels out the forms auto positioning of label & input elements */
+		padding-right:0;
+		display:inline;
+		width:auto;
+		float:none;
+		margin-bottom:0;
+		font-size:1.1em;
+	}
+/* for the date selection box */
+#calendar_date_box {
+	
+}
+
+	#calendar_date_box a {
+		color:#c2222a;
+	}
+	
+	#calendar_date_box .year_button {
+		color: #224a64;
+	}
+
+/* for the calendar listing */
+.calendar_date_header {
+	margin:5px auto;
+}
+
+	.calendar_date_header span {
+		color:#fae2a4;
+/*		background-color:#5c5d45;*/
+		font-weight:bold;
+		padding:2px;
+		font-size:1.2em;
+	}
+
+.calendar_item {
+	color:white;
+	margin-bottom:10px;
+}
+
+	.calendar_item div {
+		float:left;
+		text-align:center;
+	}
+	
+	.calendar_item .first_col {
+		width:50%;
+		text-align:left;
+	}
+	
+		.calendar_item .first_col img {
+			float:left;
+			margin-right:5px;			
+			border: 2px solid #d3e6c4;
+		}
+		
+		.calendar_item .first_col .network_images img {
+			border:0;
+			float:none;
+			margin:0 1px;
+		}
+		
+	.calendar_item .second_col {
+		width:30%;
+	}
+	
+	.calendar_item .third_col {
+		width:20%;
+	}
+
+/* for the event listing box */
+#event_overview_box {
+	
+}
+
+	#event_overview_box .first_col {
+		float:left;
+	}
+
+	#event_overview_box .second_col {
+		float:right;
+		text-align:left;
+		width:160px;
+	}
+/* for the user profile viewing page */
+#profile_box {
+	
+}
+	#profile_box .profile_headers {
+		
+	}
+	
+		#profile_box .profile_headers .first_header {
+			width:60%;
+			float:left;
+		}
+	
+		#profile_box .profile_headers .second_header {
+			width:20%;
+			float:left;
+		}
+		
+		#profile_box .profile_headers .right_button {
+			float:right;
+		}
+
+	#profile_box .first_col {
+		width:30%;
+		float:left;
+	}
+				
+	#profile_box .second_col {
+		width:30%;
+		float:left;
+	}
+		
+		#profile_box .second_col p {
+			margin-top:0;
+		}
+		
+		#profile_box .second_col .name_text {
+			/*
+			color:#fae2a4;
+			background-color:#5c5d45;
+			*/
+			font-weight:bold;
+			padding:2px;
+		}
+
+	#profile_box .third_col {
+		width:40%;
+		float:left;
+	}
+		#profile_box .third_col p {
+			margin:0 0 0.5em 0; /* padding on the bottom only */
+		}
+			#profile_box .third_col a {
+				text-decoration:none;
+				padding:2px;
+				
+				/* put the green arrow on the right of the link */
+				padding-right:12px;
+				background: url('../../../images/icons/green_arrow.gif') no-repeat center right;
+			}
+		
+			#profile_box .third_col a:hover {
+				text-decoration:underline;
+			}
+
+/* For the directory page */
+#directory_results .content_area {
+	padding-right:0;
+}
+
+.mini_data_box {
+	width:170px;
+	height:70px;
+	margin:0 10px 10px 0;
+	float:left;
+	padding:0 0 3px 0;
+	line-height:1.6;
+	background: url('../../../images/directory/bottom_pattern.png') no-repeat bottom;	
+}
+	.mini_data_box .picture_holder, .mini_data_box .text_holder {
+		float:left;
+		height:100%;
+		background: white url('../../../images/directory/left_pattern.png') no-repeat top right;
+	}
+	
+
+	.mini_data_box .picture_holder {
+		width:70px;
+		padding-right:3px;
+		margin-right:2px;
+	}
+	
+	.mini_data_box .text_holder {
+		background-color:#d4d0a9;
+		width:90px;
+		padding:0 2px;
+	}
+	
+		.mini_data_box .text_holder .name_text {
+			color:#6c1813;
+		}
+	
+		.mini_data_box .text_holder .member_since_text {
+			/*color:#646043;*/
+			color:white;
+		}
+	
+#spot_details_box {
+	
+}
+
+	#spot_details_box .first_col {
+		float:left;
+	}
+	
+		#spot_details_box .first_col img {
+			border: 2px solid #b1b2a4;
+		}
+	
+	#spot_details_box .second_col {
+		width:40%;
+		float:right;
+	}
+	
+#keyword_list_holder a {
+	color:white;
+	text-decoration:none;
+}
+
+#keyword_list_holder a:hover {
+	text-decoration:underline;
+}/* Event Invite */
+
+#event_invite_form hr {
+	border-width:0;
+	background-color:#747474;
+}
+
+#event_invite_form .invite_box_header {
+	width:50%;
+	float:left;
+	
+	font-size:1.4em;
+}
+
+#event_invite_form .hidden {
+	display:none;
+}
+
+#invite_list_box {
+	border-width:0 2px 0 0;
+	border-style:solid;
+	border-color:#747474;
+}
+
+#invite_list_box div {
+	padding:0 4px;
+}
+
+#invite_list_box, #friend_list_box {
+	float:left;
+	height:200px;
+	width:48%;
+	overflow:auto;
+	text-align:left;
+	
+	font-size:1.2em;
+}
+
+/* Spot Revise */
+
+#event_spot_list {
+	height:200px;
+	overflow:auto;
+	margin:4px 0;
+	font-size:1.2em;
+	border-style:solid;
+	border-width:2px 0;
+	border-color:#747474;
+	text-align:left;
+}

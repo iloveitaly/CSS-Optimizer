@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Cycle Path Gallery</title>
+		<script type="text/javascript" src="includes/js/picGallery.js"></script>
+		<script type="text/javascript" language="javascript">
+		fileArray = 	[{path:"includes/gallery/gallery_01.jpg", w:650, h:438}, 
+					{path:"includes/gallery/gallery_02.jpg", w:650, h:430}, 
+					{path:"includes/gallery/gallery_03.jpg", w:650, h:455}, 
+					{path:"includes/gallery/gallery_04.jpg", w:600, h:445}, 
+					{path:"includes/gallery/gallery_05.jpg", w:650, h:439}, 
+					{path:"includes/gallery/gallery_06.jpg", w:750, h:595}, 
+					{path:"includes/gallery/gallery_07.jpg", w:650, h:460}, 
+					{path:"includes/gallery/gallery_08.jpg", w:650, h:439}, 
+					{path:"includes/gallery/gallery_09.jpg", w:650, h:462}, 
+					{path:"includes/gallery/gallery_10.jpg", w:650, h:469}, 
+					{path:"includes/gallery/gallery_11.jpg", w:650, h:434}, 
+					{path:"includes/gallery/gallery_12.jpg", w:650, h:444}, 
+					{path:"includes/gallery/gallery_13.jpg", w:650, h:432}, 
+					{path:"includes/gallery/gallery_14.jpg", w:800, h:537}, 
+					{path:"includes/gallery/gallery_15.jpg", w:650, h:435}, 
+					{path:"includes/gallery/gallery_16.jpg", w:650, h:349}, 
+					{path:"includes/gallery/gallery_17.jpg", w:650, h:424}, 
+					{path:"includes/gallery/gallery_18.jpg", w:650, h:450}];
+
+		window.onload = function() {
+			gallery = new picGallery(fileArray, document.getElementById("picHolder"));
+		};
+		</script>
+		<style type="text/css">
+		a {
+			color: #ededed;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: white;
+			text-decoration: line-through;
+		}
+		
+		html, body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url("includes/images/bgtile.jpg");
+			text-align: center;
+		}
+		
+		.galleryTbl {
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+
+		#picHolder {
+			border-style: solid;
+			border-color: #5f5f5f;
+			border-width: 5px;
+			width: 650px;
+			height: 438px;
+		}
+		</style>
+	</head>
+	<body>
+	<table class="galleryTbl">
+		<tr>
+			<td align="center"><div id="picHolder"><img src="includes/gallery/gallery_01.jpg"></div></td>
+		</tr>
+		<tr>
+			<td valign="top" height="100%"><a href="Javascript:gallery.prevPic();">Previous Picture</a> <span style="color:#ededed;">|</span> <a href="Javascript:gallery.nextPic();">Next Picture</a></td>
+		</tr>
+	</table>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<script language="javascript">
+//make new function
+function urlmaker()
+{
+//start funtion commands
+//define the varibals use for the href generator
+var lk = prompt('enter the URL that you want to link to')
+var nm = prompt('enter the name that you want to call the link')
+//write the url code to the text box
+document.url.link.value=("[url=" +lk+ "]" +nm+ "[/url]")
+}
+</script>
+<title>java11</title>
+	</head>
+	<body>
+<form name="url">
+<p><input type="text" name="link">
+<input type="button" value="click here" onClick="urlmaker()">
+</form>
+
+
+
+
+	</body>
+</html>

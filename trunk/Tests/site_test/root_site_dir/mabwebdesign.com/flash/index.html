@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>MAB Web Design- Flash Site v2.0</title>
+    <script type="text/javascript" src="includes/js/flashobject.js"></script>
+    <style type="text/css">
+    html, body {
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+        background:#a6c8e9;
+    } 
+    
+    #flash {
+        color:#216FB0;
+        width:770px;
+        height:620px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <div id="flash">
+    You need the latest version of Flash Player installed to view the Flash version of our web-site.
+    If you already have Flash player 7 installed, you can proceed by clicking <a href="?dodetect=false">bypass the detection</a>.
+    If you dont have Flash Player installed you can proceed to our <a href="http://mabwebdesign.com/html/">HTML Version</a> of our web-site.
+    </div>
+    <script type="text/javascript">
+	    var fo = new FlashObject("index.swf", "walker", "770", "620", 7, "#a6c8e9");
+	    fo.write("flash");
+    </script>
+</body>
+</html>

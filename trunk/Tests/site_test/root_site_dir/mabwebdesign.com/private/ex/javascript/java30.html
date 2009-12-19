@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>java30</title>
+<script language="javascript">
+function rand()
+{
+var now = new Date()
+var num = (now.getSeconds())%47
+
+var now1 = new Date()
+var num1 = (now1.getHours())%47
+
+var now2 = new Date()
+var num2 = (now2.getDate())%47
+
+var now3 = new Date()
+var num3 = (now3.getDay())%47
+
+var now4 = new Date()
+var num4 = (now4.getMinutes())%47
+
+var now5 = Math.round(47*Math.random())
+
+document.lotto.gen1.value=("" +num+ "")
+document.lotto.gen2.value=("" +num1+ "")
+document.lotto.gen3.value=("" +num2+ "")
+document.lotto.gen4.value=("" +num3+ "")
+document.lotto.gen5.value=("" +num4+ "")
+document.lotto.gen6.value=("" +now5+ "")
+}
+function win()
+{
+var win1 = document.lotto.num1.value
+var win2 = document.lotto.num2.value
+var win3 = document.lotto.num3.value
+var win4 = document.lotto.num4.value
+var win5 = document.lotto.num5.value
+var win6 = document.lotto.num6.value
+var ran1 = document.lotto.gen1.value
+var ran2 = document.lotto.gen2.value
+var ran3 = document.lotto.gen3.value
+var ran4 = document.lotto.gen4.value
+var ran5 = document.lotto.gen5.value
+var ran6 = document.lotto.gen6.value
+if(win1 == ran1, win2 == ran2, win3 == ran3, win4 == ran4, win5 == ran5, win6 == ran6)
+{
+alert('you won!')
+}
+else
+{
+alert('you lost')
+}
+}
+</script>
+	</head>
+	<body>
+<center><h3>Pick your lotto numbers!</h3>
+<h5>pick numbers between 0-47</h5>
+<form name="lotto">
+<input type="text" name="num1" size="2">
+<input type="text" name="num2" size="2">
+<input type="text" name="num3" size="2">
+<input type="text" name="num4" size="2">
+<input type="text" name="num5" size="2">
+<input type="text" name="num6" size="2">
+<br><input type="button" value="play the lottery" onClick="rand()">
+<p><input type="text" name="gen1" size="2">
+<input type="text" name="gen2" size="2">
+<input type="text" name="gen3" size="2">
+<input type="text" name="gen4" size="2">
+<input type="text" name="gen5" size="2">
+<input type="text" name="gen6" size="2">
+<br><input type="button" value="did you win?" onClick="win()">
+</form></center>
+
+
+
+	</body>
+</html>

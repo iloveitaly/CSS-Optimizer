@@ -1,0 +1,40 @@
+<?php
+include_once "includes/php/indexdir.php";
+include_once "includes/php/newsparser.php";
+
+//random directorie parser
+$files = new indexDir();
+$files->index("images/bg_images");	
+
+//new parser
+$news = new newsParser();
+$news->parseXML('includes/xml/news.xml');
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>MAB Web Design- Welcome!</title>
+		<?php include "includes/html/meta.html"; ?>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" type="text/css" href="includes/css/news.css">
+		<link rel="stylesheet" type="text/css" href="includes/css/main.css">
+		<script language="javascript" type="text/javascript" src="includes/js/main.js"></script>
+	</head>
+	<!--MAB HTML Site Design v-2.0-->
+	<body>
+<?php include_once "includes/html/header.html";?>
+			<div class="title" style="left:20px;top:20px;width:310px;">About MAB</div>
+			<div class="title" style="left:402px;top:152px;width:300px;">News</div>
+			
+			<div class="content" style="left:22px;top:50px;width:326px;height:150px;">
+MAB is a small one-man web-site design company dedicated to bringing you professional quality web-site design and programming at an affordable cost.
+with our knowledge of many web technologies we can provide you with the optimal solution for your web-site's needs whether it be a small informative site, or a large scale rich internet application.</div>
+			<div class="content" style="top:182px;left:410px;width:290px;height:285px;"><?php $news->display();?>
+			</div>
+			<!--about box-->
+			<div class="whiteBox" style="width:362px;height:200px;left:10px;top:10px;">&nbsp;</div>
+			<div class="whiteBox" style="width:342px;height:180px;left:20px;top:20px;">&nbsp;</div>
+			<!--news box-->
+			<div class="whiteBox" style="width:320px;height:340px;left:392px;top:142px;">&nbsp;</div>
+			<div class="whiteBox" style="width:300px;height:320px;left:402px;top:152px;">&nbsp;</div>
+<?php include_once "includes/html/footer.html";?>

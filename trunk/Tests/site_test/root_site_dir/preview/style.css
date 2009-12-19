@@ -1,0 +1,23 @@
+body {	font-family: "Times New Roman", "Times New Roman", "Times New Roman";}
+.buttlink {	text-decoration: none;}
+table {	border-style: outset;	border-width: thick;
+	border-color: #b2b2b2;}
+tr {
+	border-style: solid;	border-width: thin;
+	border-color: #b2b2b2;
+}
+td {
+	border-style: solid;	border-width: thin;
+	border-color: #b2b2b2;
+}
+th {
+	border-style: solid;	border-width: thin;
+	border-color: #b2b2b2;
+}
+a:link {
+	color: #cbcbcb;
+}
+a:hover {
+	color: #b2b2b2;
+}
+a:visited {	color: #7f7f7f;}

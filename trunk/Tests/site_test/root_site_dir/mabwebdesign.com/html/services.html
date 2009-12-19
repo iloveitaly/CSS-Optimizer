@@ -1,0 +1,53 @@
+<?php
+include_once "includes/php/indexdir.php";
+
+//random directorie parser
+$files = new indexDir();
+$files->index("images/bg_images");	
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>MAB Web Design- Services We Provide</title>
+		<?php include "includes/html/meta.html"; ?>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" type="text/css" href="includes/css/main.css">
+		<link rel="stylesheet" type="text/css" href="includes/css/services.css">
+		<script language="javascript" type="text/javascript" src="includes/js/main.js"></script>
+		<script language="javascript" type="text/javascript" src="includes/js/services.js"></script>
+	</head>
+	<!--MAB HTML Site Design v-2.0-->
+	<body>
+<?php include_once "includes/html/header.html";?>
+			<div class="title" style="left:20px;top:20px;width:702px;">Services</div>
+			
+			<div class="content" style="top:40px;left:25px;width:677px;height:400px;"><?php include "includes/html/services/description.html"; ?></div>
+			<!--main box-->
+			<div class="whiteBox" style="width:702px;height:422px;left:10px;top:10px;">&nbsp;</div>
+			<div class="whiteBox" style="width:682px;height:402px;left:20px;top:20px;">&nbsp;</div>
+			<!--bottom menu-->
+			<div id="service_sections">
+				<div id="flash_design">Flash Design</div>
+				<div class="seperator">&nbsp;</div>
+				<div id="html_design">HTML Design</div>
+				<div class="seperator">&nbsp;</div>
+				<div id="scripting">Site Scripting</div>
+				<div class="seperator">&nbsp;</div>
+				<div id="outsourcing">Outsourcing</div>
+			</div>
+			<!--Section data-->
+			<div id="data">
+				<div class="data">
+				<?php include "includes/html/services/flash.html"; ?>
+				</div>
+				<div class="data">
+				<?php include "includes/html/services/html.html"; ?>
+				</div>
+				<div class="data">
+				<?php include "includes/html/services/scripting.html"; ?>
+				</div>
+				<div class="data">
+				<?php include "includes/html/services/outsourcing.html"; ?>
+				</div>
+			</div>
+<?php include_once "includes/html/footer.html";?>

@@ -1,0 +1,123 @@
+<?php
+//the query var s = the section
+if(!($section = $_REQUEST["s"])) {
+	header("Location: index.html");
+	exit;
+} else {
+	include "includes/func.inc";
+	$file_path ="data.txt";
+	switch($section) {
+		case 1:
+		//dj
+		$row = 0;
+		$headertxt ="DJ's &amp; Audio-Visual";
+		break;
+		case 2:
+		//florists
+		$row = 1;
+		$headertxt ="Florists &amp; Decorators";
+		break;
+		case 3:
+		//caterrs
+		$row = 2;
+		$headertxt ="Catering &amp; Beverages";
+		break;
+		case 4:
+		//videographers
+		$row = 3;
+		$headertxt ="United Imagemakers Professional Artists";
+		break;
+		case 5:
+		//cordinators 
+		$row = 4;
+		$headertxt ="Coordinators &amp; Planners";
+		break;
+		case 6:
+		//Ceremonies
+		$row = 5;
+		$headertxt ="Ceremonies &amp; Officiates";
+		break;
+		case 7:
+		//bands
+		$row = 6;
+		$headertxt ="Bands &amp; Orchestras";
+		break;
+		case 8:
+		//bridal wear
+		$row = 7;
+		$headertxt ="Wedding &amp; Bridal Wear";
+		break;
+		case 9:
+		//tuxedos and formal wear
+		$row = 8;
+		$headertxt ="Tuxedos &amp; Formal Wear";
+		break;
+		case 10:
+		//jewlers
+		$row = 9;
+		$headertxt ="Jewelers";
+		break;
+	}
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="includes/main.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Vivendors: <?php echo $headertxt; ?></title>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellpadding="5" cellspacing="0" class="maintable">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="20%" align="left" valign="top" nowrap>
+		<table cellpadding="5" cellspacing="5" border="0" >
+			<tr>
+				<td>
+				  <p><img src="images/small_logo.gif"></p>
+				  <p><a href="viewcat.html?s=6">Ceremonies &amp; Officiates</a></p>          
+				  <p><a href="viewcat.html?s=7">Bands &amp; Orchestras</a></p>
+				  <p><a href="viewcat.html?s=8">Wedding &amp; Bridal Wear</a></p>
+				  <p><a href="viewcat.html?s=9">Tuxedos &amp; Formal Wear</a></p>
+				  <p><a href="viewcat.html?s=10">Jewelers</a></p>
+				  <p><a href="viewcat.html?s=1">Deejays &amp; Audio-Visual</a></p>
+				  <p><a href="viewcat.html?s=2">Florists &amp; Decorators</a></p>
+				  <p><a href="viewcat.html?s=3">Catering &amp; Beverages</a></p>
+				  <p><a href="viewcat.html?s=4">United Imagemakers Professional Artists</a></p>
+				  <p><a href="viewcat.html?s=5">Coordinators &amp; Planners</a></p>
+		  		</td>
+		  	</tr>
+		  </table>
+		 </td>
+		<td width="80%" bgcolor="#B2B2B2" valign="top">
+			<table width="100%" cellpadding="30" cellspacing="0" border="0">
+				<tr>
+					<td align="center" class="header" nowrap><?php echo $headertxt; ?></td>
+				</tr>
+				<tr>
+					<td width="100%" nowrap>
+				<?php
+					$file_data = file_get_contents($file_path);
+					$first_parse = mainparse($file_data);
+					$second_parse = subparse($first_parse[$row]);
+					$column = 0;
+					foreach($second_parse as $curr) {
+						list($descrip, $link) = subsubparse($curr);
+						if($link!="null" && $descrip!="null") {
+							$link ="http://".$link;
+							echo"<p class=\"leftm\"><a href=\"".$link."\">".$descrip."</a></p>\r";
+						}
+						$column++;
+					}
+				?>
+					</td>
+				</tr>
+			</table>
+		</td>
+  	</tr>
+</table>
+</body>
+</html>
+<?php 
+} 
+?>

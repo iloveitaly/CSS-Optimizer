@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title></title>
+	</head>
+	<script language="javascript">
+	function toBase2(num) {
+		var tstring = num;
+		while(isNaN((newnum = parseFloat(tstring)))) {
+			if(tstring.length<=0) {
+				alert("no number found in text box");
+				return false;
+			}
+			tstring = tstring.substr(1);
+		}
+		var rtnAr = new Array(newnum.toString(2), tstring);
+		return rtnAr;
+	}
+	function convertIt() {
+		var num_1 = document.main.num_1.value;
+		var num_2 = document.main.num_2.value;
+		var new_num_1 = toBase2(num_1);
+		var new_num_2 = toBase2(num_2);
+		document.main.num_1.value=new_num_1[1];
+		document.main.num_2.value=new_num_2[1];
+		document.main.out_1.value=new_num_1[0];
+		document.main.out_2.value=new_num_2[0];
+		var final_result = eval(new_num_1[1]+" "+document.main.operator.value+" "+new_num_2[1]);
+		document.main.output.value = final_result.toString(2);
+	}
+	</script>
+	<style>
+	TH {}
+	input.nostyle {
+		border-width: 1;
+	}
+	input.regbox, input.nostyle {
+		border-style: solid;
+		border-color: cccccc;
+		background-color: #FFFFFF;
+	}
+	input.regbox {
+		border-width: 3;
+	}
+	#cent TD {
+		text-align: center;
+	}
+	</style>
+	<body>
+	<form name="main">
+<table align="center" cellpadding="5" cellspacing="5" id="cent">
+	<tr>
+		<th>Number One</th>
+		<th>Operator</th>
+		<th>Number two</th>
+	</tr>
+	<tr>
+		<td><input type="text" size="20" name="num_1" class="regbox"></td>
+		<td>
+		<select name="operator">
+			<option>&</option>
+			<option>|</option>
+			<option>^</option>
+			<option><<</option>
+			<option>>></option>
+		</select>		
+		</td>
+		<td><input type="text" size="20" name="num_2" class="regbox"></td>
+	</tr>
+	<tr>
+		<td><br>Result</br><input type="text" size="20" name="out_1" class="nostyle" readonly="true"></td>
+		<td>&nbsp;</td>
+		<td><br>Result</br><input type="text" size="20" name="out_2" class="nostyle" readonly="true"></td>
+	</tr>
+	<tr>
+		<td colspan="3"><br>Final Result</br><input type="text" size="20" name="output" class="nostyle" readonly="true"></td>
+	</tr>
+	<tr>
+		<td colspan="3"><input type="button" onClick="convertIt()" value="Convert"></td>
+	</tr>
+</table>
+<!--<script language="javascript">
+document.write((100 >> 99).toString(2));
+</script>
+
+ok, so the conclusion from all of this is that the >> cuts the number in half
+like so:
+10 >> 1 = 5
+and the << does this:
+10 << 1 = 20
+so the 1 number equals the amount of times should double the number or cut it in half
+The & operator acts like a AND statement. It looks at the binary code of the integer and compares it with the other number
+if two 1's match up, then its a one, if not then its a 0, like so:
+12 & 10 = 8; this is true because its compare the binary value of the numbers like so:
+1100 (12)
+1010 (10)
+-----------
+1000 (8)
+
+the | operator works similiar except that it doesn't need two 1's to be a 1, only one 1-->
+	</body>
+</html>

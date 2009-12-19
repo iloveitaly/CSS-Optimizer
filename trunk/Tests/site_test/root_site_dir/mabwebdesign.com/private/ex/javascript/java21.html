@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>java21</title>
+<script language="javascript">
+function tell()
+{
+var which = document.code.pick.selectedIndex
+var words = document.code.pick.options[which].value
+document.code.explain.value=("" +words+ "")
+}
+</script>
+	</head>
+	<body onUnLoad="alert('hope u learned alot!')">
+<form name="code">
+Learn about some html
+<select name="pick">
+<option selected>Pick some
+<option value='hyper links are what you would just call links. It is a URL wrapped up in a word. There actully pretty easy to make. In a html document just follow this simple format: <a href="urlhere">textyouwanttocallithere</a>, thats it just replace the URL, and the text you want to call it.'>hyperlinks
+<option value='to make a image appear in a html document you must use the <img> tags. the work like this:<img src="URLhere">. I will explain the code for you. SRC is reffering to the source of the image and the img tells the browser to get ready for an image to come.'>images
+<option value='forms are a great way to collect data and send wherever. They start with the <form> tag and end with the </form> tag. The most popular attribute is the name attribute which can be applied like this: <form name="coolname">. When you name your form it easier to be used in javascript and CGI programs.'>Forms
+</select>
+<input type="button" value="find out more" onClick="tell()">
+<p><textarea cols="40" rows="20" wrap="virtual" name="explain">
+</form>
+	</body>
+</html>

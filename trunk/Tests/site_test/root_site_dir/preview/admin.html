@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title>Admin Log-In</title>
+		<style type="text/css">
+		body {		font-family: "Times New Roman", "Times New Roman", "Times New Roman";		}
+		</style>
+		<script language="javascript">
+			function checkform() {
+			var pass = document.login.pass.value.length
+			var name = document.login.name.value.length
+			if(name<=3){			alert('Username must be At least 4 characters in length')			} else {			if(pass<=6){			alert('Password must be At least 7 characters in length')			} else {			document.login.action="adminlogin.php"			document.login.submit()			}			}			}
+		</script>
+	</head>
+	<body>
+	<table align="center">
+			<tr>
+				<td align="center"><h3>Admin Log-In</h3><p></td>
+			</tr>
+			<tr>
+				<td>
+					<table align="center">
+						<form action="Javascript:checkform()" method="POST" name="login">
+							<tr>
+								<td>Username:</td>
+								<td><input name="name" type="text"></td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+								<td><input name="pass" type="password"></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center"><input type="submit" name="Submit" value="Log In"></td>
+							</tr>
+						</form>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

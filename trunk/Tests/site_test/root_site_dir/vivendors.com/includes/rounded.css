@@ -1,0 +1,20 @@
+#clrtable TD {
+	background-color:#D9D9D9;
+}
+/*must use 50% or background image will be cut off*/
+.topr {
+	width: 50%;
+	background: url(../images/tr.gif) no-repeat top right;
+}
+.topl {
+	width: 50%;
+	background: url(../images/tl.gif) no-repeat top left;
+}
+.botl {
+	width: 50%;
+	background: url(../images/bl.gif) no-repeat bottom left;
+}
+.botr {
+	width: 50%;
+	background: url(../images/br.gif) no-repeat bottom right;
+}

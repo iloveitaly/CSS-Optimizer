@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		277F596C08F5B3C0000A021B /* Run Tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 277F597108F5B3DC000A021B /* Build configuration list for PBXAggregateTarget "Run Tests" */;
+			buildPhases = (
+				277F596B08F5B3C0000A021B /* Run Tests */,
+			);
+			dependencies = (
+				277F596E08F5B3C7000A021B /* PBXTargetDependency */,
+			);
+			name = "Run Tests";
+			productName = "Run Tests";
+		};
+		277F5A9908F705D8000A021B /* Package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 277F5A9C08F705FD000A021B /* Build configuration list for PBXAggregateTarget "Package" */;
+			buildPhases = (
+				277F5A9808F705D8000A021B /* Package */,
+			);
+			dependencies = (
+				277F5A9B08F705DF000A021B /* PBXTargetDependency */,
+			);
+			name = Package;
+			productName = Package;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2787ED4309362A6300D851B4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; };
+		2787ED6709362A9800D851B4 /* stringFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 276C475E07D38DFC003C0BD9 /* stringFunctions.c */; };
+		2787ED6809362A9A00D851B4 /* recursiveFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 2778DFD50837A59700F52C89 /* recursiveFunctions.c */; };
+		2787ED6909362AA400D851B4 /* argumentHandlerFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 2775BA3B07EB3EC6008B7BDA /* argumentHandlerFunctions.c */; };
+		2787ED6A09362AA600D851B4 /* fileStripperFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 2775B9B207E7556E008B7BDA /* fileStripperFunctions.c */; };
+		2787ED6B09362AA900D851B4 /* cssStripFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = 276C48B307D632DE003C0BD9 /* cssStripFunction.c */; };
+		2787ED6C09362AAB00D851B4 /* longtoshort.c in Sources */ = {isa = PBXBuildFile; fileRef = 27EF9A820846442600041AF6 /* longtoshort.c */; };
+		27AE1FAC09366E3F002FE691 /* fileSystemFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 276C476707D38FC3003C0BD9 /* fileSystemFunctions.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		277F596D08F5B3C7000A021B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD76FA90486AB0100D96B5E;
+			remoteInfo = cssoptimizer;
+		};
+		277F5A9A08F705DF000A021B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD76FA90486AB0100D96B5E;
+			remoteInfo = cssoptimizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		276C475A07D38DE6003C0BD9 /* stringFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringFunctions.h; sourceTree = "<group>"; };
+		276C475E07D38DFC003C0BD9 /* stringFunctions.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = stringFunctions.c; sourceTree = "<group>"; };
+		276C476207D38F47003C0BD9 /* dataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataStructures.h; sourceTree = "<group>"; };
+		276C476607D38FC3003C0BD9 /* fileSystemFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileSystemFunctions.h; sourceTree = "<group>"; };
+		276C476707D38FC3003C0BD9 /* fileSystemFunctions.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = fileSystemFunctions.c; sourceTree = "<group>"; };
+		276C48B207D632DE003C0BD9 /* cssStripFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cssStripFunction.h; sourceTree = "<group>"; };
+		276C48B307D632DE003C0BD9 /* cssStripFunction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cssStripFunction.c; sourceTree = "<group>"; };
+		276C4C1107D63E7B003C0BD9 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		2775B9B107E7556E008B7BDA /* fileStripperFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileStripperFunctions.h; sourceTree = "<group>"; };
+		2775B9B207E7556E008B7BDA /* fileStripperFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileStripperFunctions.c; sourceTree = "<group>"; };
+		2775BA3A07EB3EC6008B7BDA /* argumentHandlerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = argumentHandlerFunctions.h; sourceTree = "<group>"; };
+		2775BA3B07EB3EC6008B7BDA /* argumentHandlerFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = argumentHandlerFunctions.c; sourceTree = "<group>"; };
+		2778DFD40837A59700F52C89 /* recursiveFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recursiveFunctions.h; sourceTree = "<group>"; };
+		2778DFD50837A59700F52C89 /* recursiveFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recursiveFunctions.c; sourceTree = "<group>"; };
+		27EF97E108410A3F00041AF6 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = license.txt; path = resources/license.txt; sourceTree = "<group>"; };
+		27EF99B40845103300041AF6 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CHANGELOG.txt; path = resources/CHANGELOG.txt; sourceTree = "<group>"; };
+		27EF99B50845103300041AF6 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = TODO.txt; path = resources/TODO.txt; sourceTree = "<group>"; };
+		27EF9A810846442600041AF6 /* longtoshort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longtoshort.h; sourceTree = "<group>"; };
+		27EF9A820846442600041AF6 /* longtoshort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = longtoshort.c; sourceTree = "<group>"; };
+		8DD76FB20486AB0100D96B5E /* cssoptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cssoptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27AE1FD609366F48002FE691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* webstripper */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = webstripper;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				276C476207D38F47003C0BD9 /* dataStructures.h */,
+				276C4C1107D63E7B003C0BD9 /* constants.h */,
+				27EF9A7E0846441400041AF6 /* Long To Short */,
+				276C48AF07D632AC003C0BD9 /* Processing functions */,
+				276C477F07D3921D003C0BD9 /* Ultilitie functions */,
+				08FB7796FE84155DC02AAC07 /* main.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FB20486AB0100D96B5E /* cssoptimizer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		276C477F07D3921D003C0BD9 /* Ultilitie functions */ = {
+			isa = PBXGroup;
+			children = (
+				2778DFD40837A59700F52C89 /* recursiveFunctions.h */,
+				2778DFD50837A59700F52C89 /* recursiveFunctions.c */,
+				276C475A07D38DE6003C0BD9 /* stringFunctions.h */,
+				276C475E07D38DFC003C0BD9 /* stringFunctions.c */,
+				276C476607D38FC3003C0BD9 /* fileSystemFunctions.h */,
+				276C476707D38FC3003C0BD9 /* fileSystemFunctions.c */,
+			);
+			name = "Ultilitie functions";
+			sourceTree = "<group>";
+		};
+		276C48AF07D632AC003C0BD9 /* Processing functions */ = {
+			isa = PBXGroup;
+			children = (
+				276C48B207D632DE003C0BD9 /* cssStripFunction.h */,
+				276C48B307D632DE003C0BD9 /* cssStripFunction.c */,
+				2775BA3A07EB3EC6008B7BDA /* argumentHandlerFunctions.h */,
+				2775BA3B07EB3EC6008B7BDA /* argumentHandlerFunctions.c */,
+				2775B9B107E7556E008B7BDA /* fileStripperFunctions.h */,
+				2775B9B207E7556E008B7BDA /* fileStripperFunctions.c */,
+			);
+			name = "Processing functions";
+			sourceTree = "<group>";
+		};
+		27EF9A7E0846441400041AF6 /* Long To Short */ = {
+			isa = PBXGroup;
+			children = (
+				27EF9A810846442600041AF6 /* longtoshort.h */,
+				27EF9A820846442600041AF6 /* longtoshort.c */,
+			);
+			name = "Long To Short";
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				27EF99B40845103300041AF6 /* CHANGELOG.txt */,
+				27EF99B50845103300041AF6 /* TODO.txt */,
+				27EF97E108410A3F00041AF6 /* license.txt */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* cssoptimizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273E21DB0857221900512B2E /* Build configuration list for PBXNativeTarget "cssoptimizer" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				27AE1FD609366F48002FE691 /* Frameworks */,
+				277F5A6208F6FF3E000A021B /* Move Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cssoptimizer;
+			productInstallPath = "$(HOME)/bin";
+			productName = webstripper;
+			productReference = 8DD76FB20486AB0100D96B5E /* cssoptimizer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 273E21DF0857221900512B2E /* Build configuration list for PBXProject "CSS Optimizer" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* webstripper */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76FA90486AB0100D96B5E /* cssoptimizer */,
+				277F596C08F5B3C0000A021B /* Run Tests */,
+				277F5A9908F705D8000A021B /* Package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		277F596B08F5B3C0000A021B /* Run Tests */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Tests";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "RESULTS=./testResults.txt\n\n: > $RESULTS\n\nif [ -e \"$BUILT_PRODUCTS_DIR/cssoptimizer\" ]; then\n\tBINARY=\"$BUILT_PRODUCTS_DIR/cssoptimizer\"\nelse\n\techo \"cssoptimizer binary not found in: $BUILT_PRODUCTS_DIR\"\n\texit 1\nfi\n\nif [ -e ./tmpTest/single_file ]; then\n\techo \"-- Rollink Test --\" >> $RESULTS\n\t\"$BINARY\" ./tmpTest/single_file/rollink.css ./tmpTest/results/rollink_results.css 2>&1 | tee -a $RESULTS\n\n\techo \"-- IE Hack Test --\" >> $RESULTS\n\t\"$BINARY\" ./tmpTest/single_file/hacks.css  ./tmpTest/results/hack_results.css 2>&1 | tee -a $RESULTS\n\n\techo \"-- Standard Funct Test --\" >> $RESULTS\n\t\"$BINARY\" ./tmpTest/single_file/std.css ./tmpTest/results/basic_funct_results.css 2>&1 | tee -a $RESULTS\n\n\techo \"-- Auto-gen Ouput file-name Test --\" >>  $RESULTS\n\tcp ./tmpTest/single_file/std.css ./tmpTest/results/autogen_output_name.css\n\t\"$BINARY\" ./tmpTest/results/autogen_output_name.css 2>&1 | tee -a $RESULTS\n\trm ./tmpTest/results/autogen_output_name.css\n\n\techo \"-- Normal Use With No Options & No input/outputfile --\" >> $RESULTS\n\t\"$BINARY\" 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Options w/out input/outputfile --\\n' >>  $RESULTS\n\t\"$BINARY\" -snh 2>&1 | tee -a $RESULTS\n\n\t#echo $'\\n-- inputfile That Doesn't Exist --\\n' >> $RESULTS\n\t#\"$BINARY\" ./tmpTests/notreallyhere.css 2>&1 | tee -a $RESULTS\n\n\techo \"-- Using a directory as the inputfile without -r --\" >>  $RESULTS\n\t\"$BINARY\" ./tmpTest | tee -a $RESULTS\n\n\techo $'\\n-- Test -i Option w/No Input --\\n' >> $RESULTS\n\t\"$BINARY\" -i 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -io Option\\'s w/No Input --\\n' >> $RESULTS\n\t\"$BINARY\" -io 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -io Option\\'s w/Input From echo --\\n' >> $RESULTS\n\techo \"test{font-size:10px;}\" | \"$BINARY\" -io 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -io Option\\'s w/Large Amount of Input From echo --\\n' >> $RESULTS\n\techo \"@import url(\"./header/main.css\");\nbody{background:#d5d6d7;font:62.5% 'Lucida Grande',Verdana,Arial,Sans-Serif;color:#333;text-align:center}\n#page{background:white;border:1px solid #959596;text-align:left}\n#header{background:#73a0c5}#content{font-size:1.2em}\" | \"$BINARY\" -io 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -o Option --\\n' >> $RESULTS\n\t\"$BINARY\" ./tmpTest/single_file/std.css -o 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -i Option With a Specified Output File --\\n' >> $RESULTS\n\tcat ./tmpTest/single_file/std.css | \"$BINARY\" -i ./tmpTest/results/from_input_result.css 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -i & -o Options --\\n' >> $RESULTS\n\tcat ./tmpTest/single_file/std.css | \"$BINARY\" -io 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -q Option --\\n' >> $RESULTS\n\t\"$BINARY\" ./tmpTest/single_file/std.css ./tmpTest/results/quiet_results.css -q 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -s Option --\\n' >> $RESULTS\n\tcp ./tmpTest/single_file/std.css ./tmpTest/results/same_file.css\n\t\"$BINARY\" ./tmpTest/results/same_file.css -s 2>&1 | tee -a $RESULTS\n\t\n\techo $'\\n-- Test -r Option With An invalid Directory --\\n' >> $RESULTS\n\t\"$BINARY\" -r ./tmpTest/single_file/std.css 2>&1 | tee -a $RESULTS\n\n\techo $'\\n-- Test -r Option --\\n' >> $RESULTS\n\t\"$BINARY\" -r ./tmpTest/site_test/root_site_dir 2>&1 | tee -a $RESULTS\nelse\n\techo \"Single file test dir does not exist.\"\nfi\n\nopen -a SubEthaEdit $RESULTS\n\nexit 0";
+		};
+		277F5A6208F6FF3E000A021B /* Move Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Move Files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ -e ./Tests ]; then\n\tif [ -e ./tmpTest ]; then \n\t\trm -fdr ./tmpTest\n\tfi\n\n\tcp -R ./Tests ./tmpTest\n\texit 0\nelse \n\techo \"Tests dir does not exist in: $PWD\"\n\texit 1\nfi";
+		};
+		277F5A9808F705D8000A021B /* Package */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Package;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#create packaged binary for OS X\ncd ./resources\ncp ../build/Deployment/cssoptimizer ./cssoptimizer\ntar czfh ~/Desktop/cssoptimizer.tgz ./CHANGELOG.txt ./readme.html ./license.txt ./cssoptimizer\nrm -f ./cssoptimizer\n\n#create linux binary. You must have a precompiled binary names cssoptimizer_linux in the ./resources/ directory\ncp ./cssoptimizer_linux ./cssoptimizer\ntar czfh ~/Desktop/cssoptimizer_linux.tgz ./CHANGELOG.txt ./readme.html ./license.txt ./cssoptimizer\nrm -f ./cssoptimizer\n\n#create packaged source\ntmpDir=~/Desktop/css_tempDir\nif [ -e \"$tmpDir\" ]; then rm -drf ~/Desktop/css_tempDir; fi\nmkdir \"$tmpDir\"\n\ncd ../ #change to the root dir of the this project\nfind . -name \"*.c\" -or -name \"*.h\" | while read file; do\n\tcp $file \"$tmpDir\"/`basename $file`\ndone\n\ncp -R ./resources \"$tmpDir\"\ncp -R \"./CSS Optimizer.xcodeproj\" \"$tmpDir\"\n\ncd \"$tmpDir\"\nfind . -print0 | xargs -0 tar czfh ~/Desktop/cssoptimizer_source.tgz\n\nrm -frd \"$tmpDir\"\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2787ED4309362A6300D851B4 /* main.c in Sources */,
+				2787ED6C09362AAB00D851B4 /* longtoshort.c in Sources */,
+				2787ED6B09362AA900D851B4 /* cssStripFunction.c in Sources */,
+				2787ED6A09362AA600D851B4 /* fileStripperFunctions.c in Sources */,
+				2787ED6909362AA400D851B4 /* argumentHandlerFunctions.c in Sources */,
+				2787ED6809362A9A00D851B4 /* recursiveFunctions.c in Sources */,
+				2787ED6709362A9800D851B4 /* stringFunctions.c in Sources */,
+				27AE1FAC09366E3F002FE691 /* fileSystemFunctions.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		277F596E08F5B3C7000A021B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DD76FA90486AB0100D96B5E /* cssoptimizer */;
+			targetProxy = 277F596D08F5B3C7000A021B /* PBXContainerItemProxy */;
+		};
+		277F5A9B08F705DF000A021B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DD76FA90486AB0100D96B5E /* cssoptimizer */;
+			targetProxy = 277F5A9A08F705DF000A021B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		273E21DC0857221900512B2E /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = cssoptimizer;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		273E21DD0857221900512B2E /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = cssoptimizer;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				ZERO_LINK = YES;
+			};
+			name = Deployment;
+		};
+		273E21DE0857221900512B2E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				INSTALL_PATH = "$(HOME)/bin";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
+				PREBINDING = YES;
+				PRODUCT_NAME = cssoptimizer;
+			};
+			name = Default;
+		};
+		273E21E00857221900512B2E /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		273E21E10857221900512B2E /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		273E21E20857221900512B2E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		277F597208F5B3DC000A021B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Run Tests";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		277F597308F5B3DC000A021B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Run Tests";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		277F597408F5B3DC000A021B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Run Tests";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		277F5A9D08F705FD000A021B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Package;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		277F5A9E08F705FD000A021B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Package;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		277F5A9F08F705FD000A021B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Package;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		273E21DB0857221900512B2E /* Build configuration list for PBXNativeTarget "cssoptimizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273E21DC0857221900512B2E /* Development */,
+				273E21DD0857221900512B2E /* Deployment */,
+				273E21DE0857221900512B2E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		273E21DF0857221900512B2E /* Build configuration list for PBXProject "CSS Optimizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273E21E00857221900512B2E /* Development */,
+				273E21E10857221900512B2E /* Deployment */,
+				273E21E20857221900512B2E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		277F597108F5B3DC000A021B /* Build configuration list for PBXAggregateTarget "Run Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277F597208F5B3DC000A021B /* Development */,
+				277F597308F5B3DC000A021B /* Deployment */,
+				277F597408F5B3DC000A021B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		277F5A9C08F705FD000A021B /* Build configuration list for PBXAggregateTarget "Package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277F5A9D08F705FD000A021B /* Development */,
+				277F5A9E08F705FD000A021B /* Deployment */,
+				277F5A9F08F705FD000A021B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
