@@ -26,7 +26,7 @@
 
 void printUsage(void) {
 	printf(
-		"CSS Optimizer 1.1. http://mabblog.com/cssoptimizer/\n\n"
+		"CSS Optimizer 1.2. http://mabblog.com/cssoptimizer/\n\n"
 		"Usage: cssoptimizer [ -hlnsqio ] inputfile [ outputfile ]\n"
 		"Usage: cssoptimizer -r [ -hlnsq ] rootdir\n\n"
 		"More information can be found in the 'readme.html'\n"

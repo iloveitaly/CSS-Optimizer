@@ -1,3 +1,5 @@
+- Universal Binary
+
 05/16/09- V1.1
 -CSS Optimizer now correctly processes 'font: 62.5%/1.85em'
 -Minor changes
