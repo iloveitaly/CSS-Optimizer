@@ -31,7 +31,7 @@
 #import "fileSystemFunctions.h"
 
 int copy(const char *from, const char *to) {
-	FILE *fromFile = fopen(from, "r"), *toFile = fopen(to, "w");
+	FILE *fromFile = fopen(from, "rb"), *toFile = fopen(to, "wb");
 	
 	if(fromFile == NULL || toFile == NULL) {
 		printf("[copy()] Error opening %s or %s\n", from, to);
@@ -46,18 +46,8 @@ int copy(const char *from, const char *to) {
 	
 	free(buff);
 	fclose(fromFile);
-	fclose(fromFile);
+	fclose(toFile);
 	
-	/*FILE *fromFile, *toFile;
-	fromFile = fopen(from, "r");
-	toFile = fopen(to, "w");
-	
-	char cpyChar;
-	while((cpyChar = fgetc(fromFile)) != EOF)
-		fputc(cpyChar, toFile);
-	
-	fclose(fromFile);
-	fclose(toFile);*/
 	return 0;
 }
 
@@ -100,19 +90,9 @@ char *getFileExtension(const char target[], char to[]) {
 
 //gets the file length, rewinds the internal file pointer once its done
 long getEOF(FILE *file) {
-	long counter = 0;
-	
-	/*
-	rewind(file);
-	while(fgetc(file) != EOF) counter++;
-	rewind(file);
-	 */
-	
-	fseek(file, 0, SEEK_END);
-	//printf("%i:%i\n", counter, ftell(file)); /* test to make sure the new method was just as good as the old method */
-	counter = ftell(file);
-	rewind(file);
-	return counter;
+	struct stat buf;
+    fstat(fileno(file), &buf);
+    return buf.st_size;
 }
 
 //-------------------------------
@@ -182,21 +162,7 @@ int isDir(const char *name) {
 		return true;	
 	} else {
 		return false;
-	}
-	
-	/*
-	struct stat file;
-	
-	if(stat(name, &file) == -1) {
-		printf("[isDir()]Error reading file:%s\n", name);
-		return false;
-	}
-	
-	if(S_ISDIR(file.st_mode))
-		return true;
-	else 
-		return false;
-	*/
+	}	
 }
 
 //------------------------------

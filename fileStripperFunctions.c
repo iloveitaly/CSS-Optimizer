@@ -55,7 +55,6 @@ int processCSSFile(char *input, char *output) {
 	}
 
 	long originalFileLength = 0, strippedFileLength = 0; //counters for file length
-	
 	originalFileLength = getEOF(targetFile); //counts the total file length
 	char begin[originalFileLength], end[originalFileLength], *cpyPtr; //define to char buffers to hold the unstripped and stripped chars from the file
 	cpyPtr = begin; //puts the generic char pointer at the beggining
